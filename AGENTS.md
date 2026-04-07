@@ -55,9 +55,11 @@ bash scripts/install.sh all        # For all tools
 # Project-level
 cp AGENTS.md your-project/
 cp project.md your-project/
-cp -r skills/ your-project/.opencode/skills/
 cp -r rules/ your-project/.opencode/rules/
 cp -r agents/ your-project/.opencode/agents/
+
+# Skills need SKILL.md wrapper — use install script instead
+# Or manually: for each skill, create .opencode/skills/<name>/SKILL.md with frontmatter
 
 # Or use the install script
 bash scripts/install.sh opencode your-project/
@@ -71,10 +73,15 @@ OpenCode reads `AGENTS.md` natively. Skills go to `.opencode/skills/<name>/SKILL
 # Project-level
 cp AGENTS.md your-project/CLAUDE.md
 cp project.md your-project/
-cp -r skills/* your-project/.claude/skills/  # with SKILL.md wrapper
 cp -r rules/ your-project/.claude/rules/
 cp -r agents/ your-project/.claude/agents/
+
+# Skills need SKILL.md wrapper — use install script instead
+# Or manually: for each skill, create .claude/skills/<name>/SKILL.md with frontmatter
+
+# Hooks
 cp -r hooks/ your-project/.claude/hooks/
+# Then configure hooks in .claude/settings.json (see README.md)
 
 # Or use the install script
 bash scripts/install.sh claude your-project/

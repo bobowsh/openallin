@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # OpenAllIn 安装脚本
-# 用法: bash scripts/install.sh [opencode|claude|cursor|codex|all] [target-dir]
+# 用法: bash scripts/install.sh [opencode|claude|cursor|codex|all] [--target dir]
 
 set -e
 

@@ -23,13 +23,16 @@ cd "$TARGET_DIR"
 echo "📁 创建目录结构..."
 mkdir -p specs/{auth,api,ui}
 mkdir -p changes/archive
+mkdir -p rules
+mkdir -p config
 mkdir -p tasks/archive
 mkdir -p workspace/journals
 mkdir -p .planning
 
-# 复制模板文件
+# 复制模板和规则文件
 echo "📋 复制模板文件..."
 cp -rn "$HARNESS_DIR/templates" . 2>/dev/null || true
+cp -rn "$HARNESS_DIR/rules" . 2>/dev/null || true
 cp "$HARNESS_DIR/project.md" . 2>/dev/null || true
 
 # 创建 AGENTS.md
@@ -71,7 +74,7 @@ if [ ! -f "AGENTS.md" ]; then
 1. `/oa:propose` → 创建 proposal.md + design.md + specs/ + tasks.md
 2. 用户审核确认
 3. `/oa:apply` → 按 tasks.md 逐项执行
-4. `/oa:archive` → 合并增量规格到 openspec/specs/
+4. `/oa:archive` → 合并增量规格到 specs/
 
 ### 阶段执行 (GSD)
 1. `/oa:discuss` → 澄清模糊地带，输出 CONTEXT.md
