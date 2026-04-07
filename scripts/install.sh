@@ -10,14 +10,27 @@ HARNESS_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 # 解析参数: [tool1] [tool2] ... [--target dir]
 TOOLS=()
 TARGET="."
+SKIP_NEXT=false
 
 for arg in "$@"; do
-  if [ "$arg" = "--target" ] || [ "$arg" = "-t" ]; then
-    shift
-    TARGET="$1"
-  else
-    TOOLS+=("$arg")
+  if [ "$SKIP_NEXT" = true ]; then
+    TARGET="$arg"
+    SKIP_NEXT=false
+    continue
   fi
+  if [ "$arg" = "--target" ] || [ "$arg" = "-t" ]; then
+    SKIP_NEXT=true
+    continue
+  fi
+  # Handle --target=value format
+  case "$arg" in
+    --target=*|-t=*)
+      TARGET="${arg#*=}"
+      ;;
+    *)
+      TOOLS+=("$arg")
+      ;;
+  esac
 done
 
 # 如果没有指定工具，默认安装所有

@@ -116,6 +116,7 @@ openallin/
 │
 └── scripts/                     # 工具脚本
     ├── init.sh                  # 初始化脚本
+    ├── install.sh               # 安装脚本（多平台支持）
     ├── validate-spec.sh         # 规格验证
     └── archive-change.sh        # 变更归档
 ```
@@ -305,6 +306,7 @@ bash scripts/init.sh
 /oa:propose <change-name>     → 创建变更提案（proposal + design + specs + tasks）
 /oa:validate <change-name>    → 验证规格格式
 /oa:apply <change-name>       → 按任务清单执行
+/oa:archive <change-name>     → 归档变更并合并到主规格
 
 # Step 2: 阶段化执行（解决上下文腐烂）
 /oa:discuss <phase>           → 讨论阶段，澄清模糊地带
