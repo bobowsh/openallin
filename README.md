@@ -2,6 +2,26 @@
 
 > 融合 OpenSpec、Superpowers、GSD、OMC、ECC、Trellis 六大框架核心优势的工程化体系
 
+## 为什么需要 OpenAllIn？
+
+AI 编程工具越来越强大，但实际使用中总会遇到 6 大不稳定性。OpenAllIn 就是为了解决这些问题而生：
+
+| 痛点 | 对应层 | 解决方案 |
+|------|--------|---------|
+| AI 不知道你要什么 | Spec 层 | Delta Spec + Gherkin 规格 |
+| AI 写得像实习生 | Skills 层 | 7 种工程方法论技能 |
+| 对话一长就崩 | Execution 层 | 阶段隔离 + 波次执行 |
+| 多人协作像无头苍蝇 | Orchestration 层 | 5 种 Agent 角色 + 团队编排 |
+| 每次 session 从零开始 | Enhancement 层 | Hooks + 记忆 + 安全 |
+| AI 没有长期记忆 | Workspace 层 | 文件化上下文 + 日志 |
+
+### 技术特色
+
+- **纯文本/Shell/JSON** — 无外部依赖，可离线运行
+- **分层设计** — 每层独立可选，支持渐进式采用
+- **语言无关** — 适用于任何语言/框架的项目
+- **多工具支持** — OpenCode、Claude Code、Cursor、Codex 等
+
 ## 架构总览
 
 OpenAllIn 采用 **分层搭积木** 设计，每层独立可选、自由组合：
