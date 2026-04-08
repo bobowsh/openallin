@@ -234,6 +234,10 @@ cp openallin/AGENTS.md ~/.config/opencode/AGENTS.md
 | `skills/*.md` | `.opencode/skills/<name>/SKILL.md` |
 | `rules/*.md` | `.opencode/rules/` |
 | `agents/*.md` | `.opencode/agents/` |
+| `hooks/*.js` | `.opencode/hooks/` |
+| `config/*` | `config/` |
+| `workspace/*` | `workspace/` |
+| `templates/*` | `templates/` |
 
 ---
 
@@ -290,6 +294,18 @@ cp openallin/AGENTS.md ~/.claude/CLAUDE.md
 # Skills need SKILL.md wrapper — use install script for proper format
 cp -r openallin/rules/* ~/.claude/rules/
 ```
+
+**Claude Code 目录映射**：
+| OpenAllIn 目录 | Claude Code 目标路径 |
+|---------------|---------------------|
+| `AGENTS.md` | 项目根目录 `CLAUDE.md` |
+| `skills/*.md` | `.claude/skills/<name>/SKILL.md` |
+| `rules/*.md` | `.claude/rules/` |
+| `agents/*.md` | `.claude/agents/` |
+| `hooks/*.js` | `.claude/hooks/` |
+| `config/*` | `config/` |
+| `workspace/*` | `workspace/` |
+| `templates/*` | `templates/` |
 
 ---
 

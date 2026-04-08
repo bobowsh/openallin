@@ -58,8 +58,8 @@ fi
 echo "---"
 if [ $ERRORS -eq 0 ]; then
   echo "✅ 规格验证通过"
+  exit 0
 else
   echo "⚠️  发现 $ERRORS 个问题"
+  exit 1
 fi
-
-exit $ERRORS

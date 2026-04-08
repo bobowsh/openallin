@@ -41,76 +41,76 @@ if [ ! -f "AGENTS.md" ]; then
   cat > AGENTS.md << 'EOF'
 # OpenAllIn — Unified AI Coding Harness
 
-> 分层可组合的工程框架，融合 OpenSpec、Superpowers、GSD、OMC、ECC、Trellis 核心优势
+> A layered, composable engineering framework combining the best of OpenSpec, Superpowers, GSD, OMC, ECC, and Trellis.
 
-## 核心原则
+## Core Principles
 
-1. **Spec First** — 需求对齐前不写代码
-2. **Engineering Discipline** — 优秀工程习惯是默认行为
-3. **Context Hygiene** — 拆小任务、阶段分离、信息结构化
-4. **Team Orchestration** — 多代理像团队一样协作
-5. **Capability Enhancement** — 安全、记忆、学习、验证闭环
-6. **Project Memory** — 文件持久化而非 LLM 记忆
+1. **Spec First** — Align on requirements before writing code
+2. **Engineering Discipline** — Make best practices the default behavior
+3. **Context Hygiene** — Small tasks, phase separation, structured information
+4. **Team Orchestration** — Multiple agents collaborate like a real team
+5. **Capability Enhancement** — Security, memory, learning, verification loops
+6. **Project Memory** — File-based persistence over LLM memory
 
-## 命令
+## Commands
 
 ```
-/oa:propose <name>    → 创建变更提案
-/oa:apply <name>      → 执行任务清单
-/oa:validate <name>   → 验证规格格式
-/oa:archive <name>    → 归档变更并合并规格
-/oa:discuss <phase>   → 讨论阶段
-/oa:plan <phase>      → 计划阶段
-/oa:execute <phase>   → 执行阶段
-/oa:verify <phase>    → 验证阶段
-/oa:ship <phase>      → 发布阶段
-/oa:team-plan         → 团队规划
-/oa:team-exec         → 团队执行
-/oa:team-verify       → 团队验证
-/oa:brainstorm        → 头脑风暴
-/oa:tdd               → 测试驱动开发
-/oa:debug             → 系统化调试
-/oa:review            → 代码审查
-/oa:worktree          → Git Worktree 隔离
+/oa:propose <name>    → Create change proposal
+/oa:apply <name>      → Execute tasks from checklist
+/oa:validate <name>   → Validate spec format
+/oa:archive <name>    → Archive change and merge to specs
+/oa:discuss <phase>   → Discuss phase
+/oa:plan <phase>      → Plan phase
+/oa:execute <phase>   → Execute phase
+/oa:verify <phase>    → Verify phase
+/oa:ship <phase>      → Ship phase
+/oa:team-plan         → Team planning
+/oa:team-exec         → Team execution
+/oa:team-verify       → Team verification
+/oa:brainstorm        → Brainstorming
+/oa:tdd               → Test-driven development
+/oa:debug             → Systematic debugging
+/oa:review            → Code review
+/oa:worktree          → Git Worktree isolation
 ```
 
-## 工作流
+## Workflows
 
-### 规格驱动 (OpenSpec)
-1. `/oa:propose` → 创建 proposal.md + design.md + specs/ + tasks.md
-2. 用户审核确认
-3. `/oa:apply` → 按 tasks.md 逐项执行
-4. `/oa:archive` → 合并增量规格到 specs/
+### Spec-Driven (OpenSpec)
+1. `/oa:propose` → Create proposal.md + design.md + specs/ + tasks.md
+2. User review and confirm
+3. `/oa:apply` → Execute tasks.md items
+4. `/oa:archive` → Merge delta specs to specs/
 
-### 阶段执行 (GSD)
-1. `/oa:discuss` → 澄清模糊地带，输出 CONTEXT.md
-2. `/oa:plan` → 拆分原子任务，输出执行波次
-3. `/oa:execute` → 波次并行执行，每波独立上下文
-4. `/oa:verify` → 多维度验证（lint/test/build）
-5. `/oa:ship` → 创建 PR
+### Phase Execution (GSD)
+1. `/oa:discuss` → Clarify requirements, output CONTEXT.md
+2. `/oa:plan` → Split atomic tasks, output execution waves
+3. `/oa:execute` → Execute in waves, each wave independent context
+4. `/oa:verify` → Multi-dimensional verification (lint/test/build)
+5. `/oa:ship` → Create PR
 
-## 技能
+## Skills
 
-- **brainstorming** — 任何创造性工作前必须使用
-- **tdd-workflow** — 实现功能或修复 bug 前必须使用
-- **systematic-debugging** — 遇到 bug 或测试失败时必须使用
-- **code-review** — 完成任务或合并前必须使用
-- **worktree-isolation** — 开始功能开发时使用
-- **writing-plans** — 有多步任务时在编码前使用
-- **verification** — 声称完成前必须使用
+- **brainstorming** — Required before any creative work
+- **tdd-workflow** — Required before implementing features or fixing bugs
+- **systematic-debugging** — Required when encountering bugs or test failures
+- **code-review** — Required before completing tasks or merging
+- **worktree-isolation** — Use when starting feature development
+- **writing-plans** — Use before coding for multi-step tasks
+- **verification** — Required before claiming completion
 
-## 规则
+## Rules
 
-- 编码规范: rules/coding-standards.md
-- 安全规则: rules/security-rules.md
-- 提交规则: rules/commit-rules.md
-- 审查规则: rules/review-rules.md
+- Coding standards: rules/coding-standards.md
+- Security rules: rules/security-rules.md
+- Commit rules: rules/commit-rules.md
+- Review rules: rules/review-rules.md
 
-## 项目上下文
+## Project Context
 
-项目全局上下文: project.md
-当前状态: workspace/STATE.md
-路线图: workspace/ROADMAP.md
+Project context: project.md
+Current state: workspace/STATE.md
+Roadmap: workspace/ROADMAP.md
 EOF
 fi
 
