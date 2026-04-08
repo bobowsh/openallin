@@ -64,6 +64,9 @@ if [ ! -f "AGENTS.md" ]; then
 /oa:execute <phase>   → 执行阶段
 /oa:verify <phase>    → 验证阶段
 /oa:ship <phase>      → 发布阶段
+/oa:team-plan         → 团队规划
+/oa:team-exec         → 团队执行
+/oa:team-verify       → 团队验证
 /oa:brainstorm        → 头脑风暴
 /oa:tdd               → 测试驱动开发
 /oa:debug             → 系统化调试
@@ -162,6 +165,24 @@ cat > config/settings.json << 'EOF'
     "security_hooks": true,
     "memory_persistence": true,
     "continuous_learning": false
+  },
+  "limits": {
+    "max_thinking_tokens": 10000,
+    "autocompact_pct": 50,
+    "subagent_model": "haiku",
+    "max_parallel_tasks": 3,
+    "ralph_loop_max_iterations": 5
+  },
+  "paths": {
+    "specs_dir": "specs",
+    "changes_dir": "changes",
+    "skills_dir": "skills",
+    "agents_dir": "agents",
+    "rules_dir": "rules",
+    "hooks_dir": "hooks",
+    "tasks_dir": "tasks",
+    "workspace_dir": "workspace",
+    "planning_dir": ".planning"
   }
 }
 EOF

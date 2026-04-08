@@ -185,7 +185,7 @@ EOF
       done
 
       # 复制 hooks
-      for hook in "$HARNESS_DIR/hooks/"*.js; do
+      for hook in "$HARNESS_DIR/hooks/"*.js "$HARNESS_DIR/hooks/hooks.json"; do
         [ -f "$hook" ] || continue
         if [ ! -f ".claude/hooks/$(basename "$hook")" ]; then
           cp "$hook" ".claude/hooks/"
