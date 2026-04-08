@@ -134,14 +134,17 @@ openallin/
 ├── AGENTS.md                    # Unified entry point (all AI tools)
 ├── project.md                   # Project global context
 ├── README.md                    # Bilingual README (this file)
-├── README_zh.md                 # Chinese version
+├── README_zh.md               # Chinese version
+│
+├── examples/                   # Example change proposals (for learning)
+│   └── add-user-login/        # User login system example
 │
 ├── specs/                       # [Spec Layer] Current system specs (SOURCE OF TRUTH)
 │   ├── auth/
 │   ├── api/
 │   └── ui/
 │
-├── changes/                     # [Spec Layer] In-progress change proposals
+├── changes/                     # [Spec Layer] In-progress change proposals (empty by default)
 │   ├── <change-name>/
 │   │   ├── proposal.md         # WHY: motivation, scope, impact
 │   │   ├── design.md           # HOW: technical approach, decisions

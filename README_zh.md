@@ -84,12 +84,15 @@ openallin/
 ├── README.md                    # 双语 README（English/中文）
 ├── README_zh.md                # 中文版完整文档
 │
+├── examples/                   # 示例变更提案（仅供学习参考）
+│   └── add-user-login/        # 用户登录系统示例
+│
 ├── specs/                       # [Spec 层] 当前系统行为规格（SOURCE OF TRUTH）
 │   ├── auth/
 │   ├── api/
 │   └── ui/
 │
-├── changes/                     # [Spec 层] 进行中的变更提案
+├── changes/                     # [Spec 层] 进行中的变更提案（初始为空）
 │   ├── <change-name>/
 │   │   ├── proposal.md          # WHY：动机、范围、影响
 │   │   ├── design.md           # HOW：技术方案、架构决策
