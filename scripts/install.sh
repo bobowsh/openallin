@@ -157,11 +157,14 @@ EOF
       # 创建 .claude 目录
       mkdir -p .claude/{rules,skills,agents,hooks}
 
-      # 创建 CLAUDE.md（如果不存在）
-      if [ ! -f "CLAUDE.md" ]; then
-        cp "$HARNESS_DIR/AGENTS.md" CLAUDE.md
-        echo "  ✅ CLAUDE.md 已创建"
+      # 创建 CLAUDE.md（备份后复制）
+      if [ -f "CLAUDE.md" ]; then
+        BAK_FILE="CLAUDE.md.bak.$(date +%Y%m%d_%H%M%S)"
+        cp CLAUDE.md "$BAK_FILE"
+        echo "  📦 备份: CLAUDE.md -> $BAK_FILE"
       fi
+      cp "$HARNESS_DIR/AGENTS.md" CLAUDE.md
+      echo "  ✅ CLAUDE.md 已创建/更新"
 
       # 转换 skills 格式
       for skill in "$HARNESS_DIR/skills/"*.md; do
@@ -212,13 +215,16 @@ EOF
         fi
       done
 
-      # 复制 hooks 文件
+      # 复制 hooks 文件（覆盖 stub 或旧版本）
       for hook in "$HARNESS_DIR/hooks/"*.js; do
         [ -f "$hook" ] || continue
-        if [ ! -f ".claude/hooks/$(basename "$hook")" ]; then
-          cp "$hook" ".claude/hooks/"
-          echo "  ✅ hook: $(basename "$hook")"
+        if [ -f ".claude/hooks/$(basename "$hook")" ]; then
+          BAK_FILE=".claude/hooks/$(basename "$hook").bak.$(date +%Y%m%d_%H%M%S)"
+          cp ".claude/hooks/$(basename "$hook")" "$BAK_FILE"
+          echo "  📦 备份: $(basename "$hook") -> $BAK_FILE"
         fi
+        cp "$hook" ".claude/hooks/"
+        echo "  ✅ hook: $(basename "$hook")"
       done
 
       # 使用 jq 合并 hooks 配置到 settings.json（保留用户原有配置）
