@@ -47,6 +47,16 @@ echo "目标目录: $TARGET"
 echo "安装工具: ${TOOLS[*]}"
 echo ""
 
+# 检测并阻止安装到 home 目录或根目录
+EXPANDED_TARGET=$(eval echo "$TARGET")
+if [ "$EXPANDED_TARGET" = "$HOME" ] || [ "$EXPANDED_TARGET" = "/" ] || [ "$EXPANDED_TARGET" = "$HOME/" ]; then
+  echo "❌ 不允许安装到 home 目录 ($HOME) 或根目录"
+  echo ""
+  echo "请在项目目录下运行安装："
+  echo "  cd your-project && bash scripts/install.sh claude"
+  exit 1
+fi
+
 if [ ! -d "$TARGET" ]; then
   echo "❌ 目标目录不存在: $TARGET"
   exit 1
