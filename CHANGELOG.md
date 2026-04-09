@@ -2,14 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v1.0.4] - 2026-04-08
+## [v1.1.0] - 2026-04-09
 
 ### Added
-- **11 Command Skills**: oa-propose, oa-apply, oa-validate, oa-archive, oa-discuss, oa-plan, oa-execute, oa-verify, oa-ship, oa-team-plan, oa-team-exec, oa-team-verify, oa-worktree
-  - Implemented as OpenCode skills for actual command execution
-  - Each skill provides workflow guidance and templates
+- **16 Command Skills**: oa-propose, oa-apply, oa-validate, oa-archive, oa-discuss, oa-plan, oa-execute, oa-verify, oa-ship, oa-team-plan, oa-team-exec, oa-team-verify, oa-worktree, oa-brainstorming, oa-debugging, oa-writing-plans
+- **Multi-round Iteration Design**:
+  - oa-brainstorming: 5-round brainstorming (intent → boundary → environment → solution → confirm)
+  - oa-debugging: 5-round debugging (reproduce → hypothesize → locate → fix → prevent)
+  - oa-writing-plans: 4-round planning (understand → refine → risk → confirm)
+  - oa-discuss: 5-round discussion with round summary and user decision
+- **uninstall.sh**: Complete uninstallation with global settings.json cleanup
+
+### Changed
+- **Consolidated skills structure**: Removed `skills/` directory, all skills now in `.opencode/skills/oa-*`
+- **Updated install.sh**: Simplified to copy directly from `.opencode/skills/`
+- **Updated AGENTS.md**: Command list now matches actual 16 oa-* skills
 
 ### Fixed
+- Prevent duplicate hooks on re-install
+- Always backup config files before modification
+- Reject installation to home or root directory
+- Convert old-format hooks to new format when merging
 - Claude Code settings.json merge preserves user hooks with backup
 
 ## [v1.0.0] - 2026-04-08
@@ -17,8 +30,6 @@ All notable changes to this project will be documented in this file.
 ### Added
 - **Bilingual Support**: README.md (English/Chinese), README_zh.md (Chinese only)
 - **6-Layer Architecture**: Workspace, Orchestration, Execution, Enhancement, Skills, Spec
-- **17 AI Commands**: /oa:propose, apply, validate, archive, discuss, plan, execute, verify, ship, team-plan, team-exec, team-verify, brainstorm, tdd, debug, review, worktree
-- **7 Engineering Skills**: brainstorming, tdd-workflow, systematic-debugging, code-review, worktree-isolation, writing-plans, verification
 - **5 Agent Roles**: planner, implementer, reviewer, debugger, researcher
 - **4 Rule Sets**: coding-standards, security-rules, commit-rules, review-rules
 - **4 Event Hooks**: session-start, session-end, pre-tool-use, post-tool-use
@@ -37,3 +48,4 @@ All notable changes to this project will be documented in this file.
 - `install.sh`: One-click installation for multiple AI tools
 - `validate-spec.sh`: Validate spec format compliance
 - `archive-change.sh`: Archive completed changes and merge to main specs
+- `uninstall.sh`: Complete uninstallation
