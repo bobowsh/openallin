@@ -99,7 +99,7 @@ for tool in "${TOOLS[@]}"; do
       mkdir -p .opencode/{skills,agents,rules,commands}
 
       # 复制 commands（oa-* 命令）
-      for cmd_dir in "$HARNESS_DIR/commands/oa-"*; do
+      for cmd_dir in "$HARNESS_DIR/skills/oa-"*; do
         [ -d "$cmd_dir" ] || continue
         name=$(basename "$cmd_dir")
         if [ -f "$cmd_dir/$name.md" ]; then
@@ -174,7 +174,7 @@ EOF
       echo "  ✅ CLAUDE.md 已创建/更新"
 
       # 复制 commands（oa-* 命令）
-      for cmd_dir in "$HARNESS_DIR/commands/oa-"*; do
+      for cmd_dir in "$HARNESS_DIR/skills/oa-"*; do
         [ -d "$cmd_dir" ] || continue
         name=$(basename "$cmd_dir")
         if [ -f "$cmd_dir/$name.md" ]; then

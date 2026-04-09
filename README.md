@@ -64,7 +64,7 @@ AI coding tools are powerful, but 6 common instabilities often emerge in practic
 ```
 AGENTS.md                ← Unified entry point for AI tools
     ↓
-commands/oa-*/           ← 16 commands (oa-propose, oa-brainstorming, etc.)
+skills/oa-*/           ← 16 commands (oa-propose, oa-brainstorming, etc.)
 rules/*.md               ← Coding standards, security rules
 agents/*.md              ← Agent role definitions (planner/implementer/reviewer)
 changes/<name>/          ← Each change: proposal → design → spec → tasks
@@ -109,7 +109,7 @@ AI 编程工具越来越强大，但实际使用中总会遇到 6 大不稳定�
 ```
 AGENTS.md                ← AI 工具的统一入口
     ↓
-commands/oa-*/           ← 16 个命令（oa-propose, oa-brainstorming 等）
+skills/oa-*/           ← 16 个命令（oa-propose, oa-brainstorming 等）
 rules/*.md               ← 编码规范、安全规则
 agents/*.md              ← Agent 角色定义（planner/implementer/reviewer）
 changes/<name>/          ← 每个变更：proposal → design → spec → tasks
