@@ -6,6 +6,7 @@
 #   bash scripts/install.sh claude --target dir      # 安装到指定目录
 #   bash scripts/install.sh claude dir                # 安装到指定目录（简写）
 #   bash scripts/install.sh opencode claude           # 安装多个工具到当前目录
+#   bash scripts/install.sh                           # 自动检测当前 CLI 并安装
 
 set -e
 
@@ -46,9 +47,20 @@ for arg in "$@"; do
   esac
 done
 
-# 如果没有指定工具，默认安装所有
-if [ ${#TOOLS[@]} -eq 0 ] || ([ ${#TOOLS[@]} -eq 1 ] && [ "${TOOLS[0]}" = "all" ]); then
-  TOOLS=(opencode claude)
+# 如果没有指定工具，自动检测当前 CLI 环境
+if [ ${#TOOLS[@]} -eq 0 ]; then
+  # 检测当前运行环境
+  if [ -n "$OPENCODE" ] || [ -n "$OPENCODE_PROJECT_DIR" ] || [ -d ".opencode" ]; then
+    TOOLS=(opencode)
+    echo "🔍 检测到 OpenCode 环境"
+  elif [ -n "$CLAUDE_CODE" ] || [ -n "$CLAUDE_PROJECT_DIR" ] || [ -d ".claude" ]; then
+    TOOLS=(claude)
+    echo "🔍 检测到 Claude Code 环境"
+  else
+    # 默认安装两个
+    TOOLS=(opencode claude)
+    echo "🔍 未检测到特定 CLI 环境，安装到 opencode 和 claude"
+  fi
 fi
 
 echo "🚀 OpenAllIn 安装程序"
