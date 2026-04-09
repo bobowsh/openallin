@@ -25,3 +25,9 @@
 
 # OS
 Thumbs.db
+
+# OpenAllIn local install artifacts
+.claude/
+.opencode/
+CLAUDE.md
+opencode.json
