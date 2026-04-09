@@ -1,17 +1,17 @@
 ---
 name: oa-writing-plans
-description: OpenAllIn /oa:writing-plans 命令 — 计划编写（多轮迭代）
+description: OpenAllIn /oa-writing-plans 命令 — 计划编写（多轮迭代）
 ---
 
-# /oa:writing-plans — 计划编写
+# /oa-writing-plans — 计划编写
 
-当用户输入 `/oa:writing-plans <feature>` 时执行此技能。
+当用户输入 `/oa-writing-plans <feature>` 时执行此技能。
 
 ## 核心设计：多轮迭代
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  /oa:writing-plans 是多轮迭代过程：                         │
+│  /oa-writing-plans 是多轮迭代过程：                         │
 │                                                             │
 │  草案 → 用户反馈 → 修改 → 用户确认 → 定稿                   │
 │    ↑                                      │                │

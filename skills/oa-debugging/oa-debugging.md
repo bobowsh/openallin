@@ -1,17 +1,17 @@
 ---
 name: oa-debugging
-description: OpenAllIn /oa:debugging 命令 — 系统化调试（多轮迭代）
+description: OpenAllIn /oa-debugging 命令 — 系统化调试（多轮迭代）
 ---
 
-# /oa:debugging — 系统化调试
+# /oa-debugging — 系统化调试
 
-当用户输入 `/oa:debugging <issue>` 时执行此技能。
+当用户输入 `/oa-debugging <issue>` 时执行此技能。
 
 ## 核心设计：多轮迭代
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  /oa:debugging 是多轮迭代过程：                             │
+│  /oa-debugging 是多轮迭代过程：                             │
 │                                                             │
 │  假设 → 验证 → 定位 → 修复 → 测试                          │
 │    ↑                                      │                │

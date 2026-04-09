@@ -1,11 +1,11 @@
 ---
 name: oa-worktree
-description: OpenAllIn /oa:worktree 命令 — Git Worktree 隔离
+description: OpenAllIn /oa-worktree 命令 — Git Worktree 隔离
 ---
 
-# /oa:worktree — Git Worktree 隔离
+# /oa-worktree — Git Worktree 隔离
 
-当用户输入 `/oa:worktree` 时执行此技能。
+当用户输入 `/oa-worktree` 时执行此技能。
 
 ## 工作流程
 

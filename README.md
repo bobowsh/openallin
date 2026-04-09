@@ -181,14 +181,23 @@ openallin/
 │   │   └── tasks.md            # STEPS: implementation checklist
 │   └── archive/                # Archived changes (by timestamp)
 │
-├── skills/                      # [Skills Layer] Composable skills
-│   ├── brainstorming.md        # Brainstorming & requirement exploration
-│   ├── tdd-workflow.md         # Test-driven development
-│   ├── systematic-debugging.md  # Systematic debugging
-│   ├── code-review.md          # Code review
-│   ├── worktree-isolation.md   # Git Worktree isolation
-│   ├── writing-plans.md        # Plan writing
-│   └── verification.md         # Verification loop
+├── skills/                      # [Skills Layer] CLI commands (oa-*)
+│   ├── oa-propose/             # Create change proposal
+│   ├── oa-apply/               # Execute tasks from checklist
+│   ├── oa-validate/            # Validate spec format
+│   ├── oa-archive/             # Archive change and merge to specs
+│   ├── oa-discuss/             # Discuss and clarify requirements
+│   ├── oa-plan/                # Plan atomic tasks
+│   ├── oa-execute/             # Execute in waves
+│   ├── oa-verify/              # Verify quality
+│   ├── oa-ship/                # Ship and create PR
+│   ├── oa-team-plan/           # Team planning
+│   ├── oa-team-exec/           # Team execution
+│   ├── oa-team-verify/         # Team verification
+│   ├── oa-brainstorming/       # Brainstorming session
+│   ├── oa-debugging/           # Systematic debugging
+│   ├── oa-writing-plans/       # Plan writing
+│   └── oa-worktree/            # Git Worktree isolation
 │
 ├── agents/                      # [Orchestration Layer] Agent definitions
 │   ├── planner.md              # Architect/planner (high-level reasoning)
@@ -240,6 +249,7 @@ openallin/
 └── scripts/                     # Utility scripts
     ├── init.sh                 # Initialization
     ├── install.sh              # Installation (multi-platform)
+    ├── uninstall.sh            # Uninstallation
     ├── validate-spec.sh        # Spec validation
     └── archive-change.sh       # Change archival
 ```
@@ -453,32 +463,31 @@ bash scripts/init.sh
 ```
 # Step 1: Spec-driven (clarify "what" first)
 # 规格驱动（先把"做什么"写清楚）
-/oa:propose <change-name>     → Create change proposal
-/oa:validate <change-name>    → Validate spec format
-/oa:apply <change-name>       → Execute tasks from checklist
-/oa:archive <change-name>     → Archive change and merge to specs
+/oa-propose <change-name>     → Create change proposal
+/oa-validate <change-name>    → Validate spec format
+/oa-apply <change-name>       → Execute tasks from checklist
+/oa-archive <change-name>     → Archive change and merge to specs
 
 # Step 2: Phase execution (solve context rot)
 # 阶段化执行（解决上下文腐烂）
-/oa:discuss <phase>           → Discuss phase, clarify ambiguity
-/oa:plan <phase>              → Plan phase, split atomic tasks
-/oa:execute <phase>           → Execute phase, parallel waves
-/oa:verify <phase>            → Verify phase, quality gate
-/oa:ship <phase>              → Ship phase, create PR
+/oa-discuss <phase>           → Discuss phase, clarify ambiguity
+/oa-plan <phase>              → Plan phase, split atomic tasks
+/oa-execute <phase>           → Execute phase, parallel waves
+/oa-verify <phase>            → Verify phase, quality gate
+/oa-ship <phase>              → Ship phase, create PR
 
 # Step 3: Team collaboration (multi-agent orchestration)
 # 团队协作（多代理编排）
-/oa:team-plan                 → Team planning
-/oa:team-exec                 → Team execution
-/oa:team-verify               → Team verification
+/oa-team-plan                 → Team planning
+/oa-team-exec                 → Team execution
+/oa-team-verify               → Team verification
 
 # Step 4: Skill invocation (engineering discipline)
 # 技能调用（工程纪律）
-/oa:brainstorm                → Brainstorming
-/oa:tdd                       → Test-driven development
-/oa:debug                     → Systematic debugging
-/oa:review                    → Code review
-/oa:worktree                  → Git Worktree isolation
+/oa-brainstorming                → Brainstorming session (multi-round)
+/oa-debugging                    → Systematic debugging (multi-round)
+/oa-writing-plans               → Plan writing (multi-round)
+/oa-worktree                    → Git Worktree isolation
 ```
 
 ### Three Typical Workflows / 三种典型工作流

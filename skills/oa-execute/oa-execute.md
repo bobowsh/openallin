@@ -1,11 +1,11 @@
 ---
 name: oa-execute
-description: OpenAllIn /oa:execute 命令 — 按波次执行任务
+description: OpenAllIn /oa-execute 命令 — 按波次执行任务
 ---
 
-# /oa:execute — 按波次执行任务
+# /oa-execute — 按波次执行任务
 
-当用户输入 `/oa:execute <phase>` 时执行此技能。
+当用户输入 `/oa-execute <phase>` 时执行此技能。
 
 ## 工作流程
 

@@ -1,17 +1,17 @@
 ---
 name: oa-archive
-description: OpenAllIn /oa:archive 命令 — 归档变更并合并到规格库
+description: OpenAllIn /oa-archive 命令 — 归档变更并合并到规格库
 ---
 
-# /oa:archive — 归档变更并合并到规格库
+# /oa-archive — 归档变更并合并到规格库
 
-当用户输入 `/oa:archive <name>` 时执行此技能。
+当用户输入 `/oa-archive <name>` 时执行此技能。
 
 ## 工作流程
 
 ### 1. 解析变更名称
 - 从命令参数提取变更名称
-- 格式：`/oa:archive add-user-login`
+- 格式：`/oa-archive add-user-login`
 
 ### 2. 验证变更完成
 - 检查 `changes/<name>/tasks/tasks.md` 中所有任务是否完成

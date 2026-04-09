@@ -1,11 +1,11 @@
 ---
 name: oa-team-verify
-description: OpenAllIn /oa:team-verify 命令 — 团队验证
+description: OpenAllIn /oa-team-verify 命令 — 团队验证
 ---
 
-# /oa:team-verify — 团队验证
+# /oa-team-verify — 团队验证
 
-当用户输入 `/oa:team-verify` 时执行此技能。
+当用户输入 `/oa-team-verify` 时执行此技能。
 
 ## 工作流程
 

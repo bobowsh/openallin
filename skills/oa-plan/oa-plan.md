@@ -1,11 +1,11 @@
 ---
 name: oa-plan
-description: OpenAllIn /oa:plan 命令 — 规划执行任务
+description: OpenAllIn /oa-plan 命令 — 规划执行任务
 ---
 
-# /oa:plan — 规划执行任务
+# /oa-plan — 规划执行任务
 
-当用户输入 `/oa:plan <phase>` 时执行此技能。
+当用户输入 `/oa-plan <phase>` 时执行此技能。
 
 ## 工作流程
 

@@ -131,14 +131,23 @@ openallin/
 │   │   └── tasks.md            # STEPS：实现清单
 │   └── archive/                # 已归档的变更（按时间戳）
 │
-├── skills/                      # [Skills 层] 可组合技能
-│   ├── brainstorming.md         # 头脑风暴与需求探索
-│   ├── tdd-workflow.md         # 测试驱动开发
-│   ├── systematic-debugging.md # 系统化调试
-│   ├── code-review.md          # 代码审查
-│   ├── worktree-isolation.md    # Git Worktree 隔离
-│   ├── writing-plans.md        # 计划编写
-│   └── verification.md          # 验证闭环
+├── skills/                      # [Skills 层] CLI 命令（oa-*）
+│   ├── oa-propose/             # 创建变更提案
+│   ├── oa-apply/               # 执行任务清单
+│   ├── oa-validate/            # 验证规格格式
+│   ├── oa-archive/             # 归档变更并合并规格
+│   ├── oa-discuss/             # 讨论阶段
+│   ├── oa-plan/                # 规划阶段
+│   ├── oa-execute/             # 执行阶段
+│   ├── oa-verify/              # 验证阶段
+│   ├── oa-ship/                # 发布阶段
+│   ├── oa-team-plan/           # 团队规划
+│   ├── oa-team-exec/           # 团队执行
+│   ├── oa-team-verify/         # 团队验证
+│   ├── oa-brainstorming/       # 头脑风暴
+│   ├── oa-debugging/           # 系统化调试
+│   ├── oa-writing-plans/       # 计划编写
+│   └── oa-worktree/            # Git Worktree 隔离
 │
 ├── agents/                      # [Orchestration 层] 专用代理定义
 │   ├── planner.md              # 架构师/规划器（高阶推理）
@@ -190,6 +199,7 @@ openallin/
 └── scripts/                    # 工具脚本
     ├── init.sh                 # 初始化脚本
     ├── install.sh               # 安装脚本（多平台支持）
+    ├── uninstall.sh             # 卸载脚本
     ├── validate-spec.sh         # 规格验证
     └── archive-change.sh        # 变更归档
 ```
@@ -406,29 +416,28 @@ bash scripts/init.sh
 
 ```
 # Step 1: 规格驱动（先把"做什么"写清楚）
-/oa:propose <change-name>     → 创建变更提案（proposal + design + specs + tasks）
-/oa:validate <change-name>     → 验证规格格式
-/oa:apply <change-name>        → 按任务清单执行
-/oa:archive <change-name>      → 归档变更并合并到主规格
+/oa-propose <change-name>     → 创建变更提案（proposal + design + specs + tasks）
+/oa-validate <change-name>     → 验证规格格式
+/oa-apply <change-name>        → 按任务清单执行
+/oa-archive <change-name>      → 归档变更并合并到主规格
 
 # Step 2: 阶段化执行（解决上下文腐烂）
-/oa:discuss <phase>            → 讨论阶段，澄清模糊地带
-/oa:plan <phase>              → 计划阶段，拆分原子任务
-/oa:execute <phase>            → 执行阶段，波次并行
-/oa:verify <phase>            → 验证阶段，质量把关
-/oa:ship <phase>              → 发布阶段，创建 PR
+/oa-discuss <phase>            → 讨论阶段，澄清模糊地带
+/oa-plan <phase>              → 计划阶段，拆分原子任务
+/oa-execute <phase>            → 执行阶段，波次并行
+/oa-verify <phase>            → 验证阶段，质量把关
+/oa-ship <phase>              → 发布阶段，创建 PR
 
 # Step 3: 团队协作（多代理编排）
-/oa:team-plan                  → 团队规划
-/oa:team-exec                 → 团队执行
-/oa:team-verify               → 团队验证
+/oa-team-plan                  → 团队规划
+/oa-team-exec                 → 团队执行
+/oa-team-verify               → 团队验证
 
 # Step 4: 技能调用（工程纪律）
-/oa:brainstorm                → 头脑风暴
-/oa:tdd                       → 测试驱动开发
-/oa:debug                     → 系统化调试
-/oa:review                   → 代码审查
-/oa:worktree                  → Git Worktree 隔离
+/oa-brainstorming                → 头脑风暴（多轮迭代）
+/oa-debugging                    → 系统化调试（多轮迭代）
+/oa-writing-plans               → 计划编写（多轮迭代）
+/oa-worktree                    → Git Worktree 隔离
 ```
 
 ### 三种典型工作流

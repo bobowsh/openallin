@@ -1,11 +1,11 @@
 ---
 name: oa-verify
-description: OpenAllIn /oa:verify 命令 — 多维度验证
+description: OpenAllIn /oa-verify 命令 — 多维度验证
 ---
 
-# /oa:verify — 多维度验证
+# /oa-verify — 多维度验证
 
-当用户输入 `/oa:verify <phase>` 时执行此技能。
+当用户输入 `/oa-verify <phase>` 时执行此技能。
 
 ## 工作流程
 

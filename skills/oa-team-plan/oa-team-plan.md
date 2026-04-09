@@ -1,11 +1,11 @@
 ---
 name: oa-team-plan
-description: OpenAllIn /oa:team-plan 命令 — 团队规划
+description: OpenAllIn /oa-team-plan 命令 — 团队规划
 ---
 
-# /oa:team-plan — 团队规划
+# /oa-team-plan — 团队规划
 
-当用户输入 `/oa:team-plan` 时执行此技能。
+当用户输入 `/oa-team-plan` 时执行此技能。
 
 ## 工作流程
 

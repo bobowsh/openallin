@@ -17,14 +17,14 @@
 ### 路径：Spec + Skills
 
 ```
-1. /oa:brainstorm          → 澄清需求
-2. /oa:propose <name>      → 生成 proposal + design + specs + tasks
+1. /oa-brainstorming          → 澄清需求
+2. /oa-propose <name>      → 生成 proposal + design + specs + tasks
 3. 审核确认
-4. /oa:apply <name>        → 按 tasks.md 逐项执行
+4. /oa-apply <name>        → 按 tasks.md 逐项执行
    ├── 每个任务前自动触发 TDD skill
    ├── 遇到 bug 自动触发 debugging skill
    └── 完成后自动触发 verification skill
-5. /oa:verify <phase>      → 最终验证
+5. /oa-verify <phase>      → 最终验证
 6. git commit && push
 ```
 
@@ -43,35 +43,35 @@
 
 ```
 Phase 0: 规格
-1. /oa:brainstorm          → 探索需求
-2. /oa:propose <name>      → 生成变更提案
+1. /oa-brainstorming          → 探索需求
+2. /oa-propose <name>      → 生成变更提案
 3. 审核确认
 
 Phase 1: 讨论
-4. /oa:discuss <phase>     → 识别模糊地带
+4. /oa-discuss <phase>     → 识别模糊地带
    ├── 输出: CONTEXT.md（澄清后的需求）
    └── 回答所有"灰色问题"
 
 Phase 2: 计划
-5. /oa:plan <phase>        → 拆分原子任务
+5. /oa-plan <phase>        → 拆分原子任务
    ├── 并行调研不同实现方案
    ├── 计划检查器验证任务质量
    └── 输出: 执行波次计划
 
 Phase 3: 执行
-6. /oa:execute <phase>     → 波次执行
+6. /oa-execute <phase>     → 波次执行
    ├── Wave 1: 独立任务（可并行）
    ├── Wave 2: 依赖 Wave 1 的任务
    └── 每个任务独立上下文，原子提交
 
 Phase 4: 验证
-7. /oa:verify <phase>      → 多维度验证
+7. /oa-verify <phase>      → 多维度验证
    ├── 提取可验证交付物
    ├── 逐项检查
    └── 如有问题 → debug → 修复 → 重新验证
 
 Phase 5: 发布
-8. /oa:ship <phase>        → 创建 PR
+8. /oa-ship <phase>        → 创建 PR
    └── 自动生成 PR 描述
 ```
 
@@ -90,24 +90,24 @@ Phase 5: 发布
 
 ```
 Step 1: 规格对齐（Spec 层）
-/oa:propose <feature-a>    → 变更 A
-/oa:propose <feature-b>    → 变更 B
+/oa-propose <feature-a>    → 变更 A
+/oa-propose <feature-b>    → 变更 B
 → 两个变更独立，可并行开发
 
 Step 2: 团队规划（Orchestration 层）
-/oa:team-plan
+/oa-team-plan
 ├── Planner Agent: 评估需求，拆分任务
 ├── Researcher Agent: 技术方案调研
 └── 输出: 任务分配方案
 
 Step 3: 并行执行（Workspace 层 + Execution 层）
-/oa:team-exec
+/oa-team-exec
 ├── Worktree A: Implementer Agent → Feature A
 ├── Worktree B: Implementer Agent → Feature B
 └── 每个 worktree 独立上下文、独立分支
 
 Step 4: 质量关卡（Enhancement 层）
-/oa:team-verify
+/oa-team-verify
 ├── Reviewer Agent: 代码审查
 ├── Security Hook: 安全检查
 ├── Verification: 测试/构建验证

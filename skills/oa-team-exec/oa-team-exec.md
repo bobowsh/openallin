@@ -1,11 +1,11 @@
 ---
 name: oa-team-exec
-description: OpenAllIn /oa:team-exec 命令 — 团队并行执行
+description: OpenAllIn /oa-team-exec 命令 — 团队并行执行
 ---
 
-# /oa:team-exec — 团队并行执行
+# /oa-team-exec — 团队并行执行
 
-当用户输入 `/oa:team-exec` 时执行此技能。
+当用户输入 `/oa-team-exec` 时执行此技能。
 
 ## 工作流程
 

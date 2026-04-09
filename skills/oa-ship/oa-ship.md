@@ -1,11 +1,11 @@
 ---
 name: oa-ship
-description: OpenAllIn /oa:ship 命令 — 发布变更
+description: OpenAllIn /oa-ship 命令 — 发布变更
 ---
 
-# /oa:ship — 发布变更
+# /oa-ship — 发布变更
 
-当用户输入 `/oa:ship <phase>` 时执行此技能。
+当用户输入 `/oa-ship <phase>` 时执行此技能。
 
 ## 工作流程
 

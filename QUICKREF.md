@@ -2,27 +2,26 @@
 
 > 一页纸记住所有命令、文件和规则
 
-## 命令速查
+## 命令速查 (16 个)
 
-| 命令 | 用途 | 触发层 |
-|------|------|--------|
-| `/oa:propose <name>` | 创建变更提案 | Spec |
-| `/oa:apply <name>` | 执行任务清单 | Spec |
-| `/oa:validate <name>` | 验证规格格式 | Spec |
-| `/oa:archive <name>` | 归档变更并合并规格 | Spec |
-| `/oa:discuss <phase>` | 讨论澄清需求 | Execution |
-| `/oa:plan <phase>` | 计划原子任务 | Execution |
-| `/oa:execute <phase>` | 波次并行执行 | Execution |
-| `/oa:verify <phase>` | 多维度验证 | Execution |
-| `/oa:ship <phase>` | 创建 PR 发布 | Execution |
-| `/oa:brainstorm` | 头脑风暴 | Skills |
-| `/oa:tdd` | 测试驱动开发 | Skills |
-| `/oa:debug` | 系统化调试 | Skills |
-| `/oa:review` | 代码审查 | Skills |
-| `/oa:worktree` | Git Worktree 隔离 | Skills |
-| `/oa:team-plan` | 团队规划 | Orchestration |
-| `/oa:team-exec` | 团队执行 | Orchestration |
-| `/oa:team-verify` | 团队验证 | Orchestration |
+| 命令 | 用途 | 触发层 | 多轮迭代 |
+|------|------|--------|----------|
+| `/oa-propose <name>` | 创建变更提案 | Spec | - |
+| `/oa-apply <name>` | 执行任务清单 | Spec | - |
+| `/oa-validate <name>` | 验证规格格式 | Spec | - |
+| `/oa-archive <name>` | 归档变更并合并规格 | Spec | - |
+| `/oa-discuss` | 讨论澄清需求 | Execution | ✅ 5轮 |
+| `/oa-plan` | 计划原子任务 | Execution | - |
+| `/oa-execute` | 波次并行执行 | Execution | - |
+| `/oa-verify` | 多维度验证 | Execution | - |
+| `/oa-ship` | 创建 PR 发布 | Execution | - |
+| `/oa-brainstorming` | 头脑风暴 | Skills | ✅ 5轮 |
+| `/oa-debugging` | 系统化调试 | Skills | ✅ 5轮 |
+| `/oa-writing-plans` | 计划编写 | Skills | ✅ 4轮 |
+| `/oa-worktree` | Git Worktree 隔离 | Skills | - |
+| `/oa-team-plan` | 团队规划 | Orchestration | - |
+| `/oa-team-exec` | 团队执行 | Orchestration | - |
+| `/oa-team-verify` | 团队验证 | Orchestration | - |
 
 ## 关键文件
 
@@ -33,7 +32,7 @@
 | `changes/<name>/proposal.md` | Spec | 变更动机 |
 | `changes/<name>/design.md` | Spec | 技术方案 |
 | `changes/<name>/tasks.md` | Spec | 任务清单 |
-| `skills/*.md` | Skills | 工程方法论 |
+| `skills/oa-*/` | Skills | CLI 命令（oa-propose, oa-brainstorming 等）|
 | `workspace/STATE.md` | Workspace | 当前执行状态 |
 | `workspace/ROADMAP.md` | Workspace | 项目路线图 |
 | `config/settings.json` | Enhancement | 全局配置 |

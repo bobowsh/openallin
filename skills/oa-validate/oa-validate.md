@@ -1,17 +1,17 @@
 ---
 name: oa-validate
-description: OpenAllIn /oa:validate 命令 — 验证规格文档格式
+description: OpenAllIn /oa-validate 命令 — 验证规格文档格式
 ---
 
-# /oa:validate — 验证规格文档格式
+# /oa-validate — 验证规格文档格式
 
-当用户输入 `/oa:validate <name>` 时执行此技能。
+当用户输入 `/oa-validate <name>` 时执行此技能。
 
 ## 工作流程
 
 ### 1. 解析变更名称
 - 从命令参数提取变更名称
-- 格式：`/oa:validate add-user-login`
+- 格式：`/oa-validate add-user-login`
 
 ### 2. 验证目录结构
 检查 `changes/<name>/` 是否包含：

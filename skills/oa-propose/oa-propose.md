@@ -1,17 +1,17 @@
 ---
 name: oa-propose
-description: OpenAllIn /oa:propose 命令 — 创建变更提案
+description: OpenAllIn /oa-propose 命令 — 创建变更提案
 ---
 
-# /oa:propose — 创建变更提案
+# /oa-propose — 创建变更提案
 
-当用户输入 `/oa:propose <name>` 时执行此技能。
+当用户输入 `/oa-propose <name>` 时执行此技能。
 
 ## 工作流程
 
 ### 1. 解析提案名称
 - 从命令参数提取提案名称
-- 格式：`/oa:propose add-user-login`
+- 格式：`/oa-propose add-user-login`
 
 ### 2. 创建变更目录结构
 ```
