@@ -93,11 +93,39 @@ for file in "${OPENALLIN_FILES[@]}"; do
   fi
 done
 
-# 删除目录
+# 删除目录（但保留用户可能有自用文件的目录结构）
 for dir in "${OPENALLIN_DIRS[@]}"; do
   if [ -d "$dir" ]; then
-    rm -rf "$dir"
-    echo "  ✅ 删除: $dir/"
+    case "$dir" in
+      workspace)
+        # workspace 里只删除 OpenAllIn 生成的文件
+        rm -rf "$dir/journals" 2>/dev/null && echo "  ✅ 删除: $dir/journals/"
+        rm -f "$dir/tool-usage.log" 2>/dev/null && echo "  ✅ 删除: $dir/tool-usage.log"
+        rm -f "$dir/STATE.md" 2>/dev/null && echo "  ✅ 删除: $dir/STATE.md"
+        rm -f "$dir/ROADMAP.md" 2>/dev/null && echo "  ✅ 删除: $dir/ROADMAP.md"
+        # 如果目录空了，尝试删除（但保留如果有其他内容）
+        if [ -z "$(ls -A "$dir" 2>/dev/null)" ]; then
+          rmdir "$dir" 2>/dev/null && echo "  ✅ 删除: $dir/ (空目录)"
+        fi
+        ;;
+      tasks)
+        # tasks 里只删除 OpenAllIn 生成的文件
+        rm -rf "$dir/archive" 2>/dev/null && echo "  ✅ 删除: $dir/archive/"
+        if [ -z "$(ls -A "$dir" 2>/dev/null)" ]; then
+          rmdir "$dir" 2>/dev/null && echo "  ✅ 删除: $dir/ (空目录)"
+        fi
+        ;;
+      .planning)
+        rm -f "$dir/CONTEXT.md" "$dir/REQUIREMENTS.md" "$dir/.current-task" 2>/dev/null
+        if [ -z "$(ls -A "$dir" 2>/dev/null)" ]; then
+          rmdir "$dir" 2>/dev/null && echo "  ✅ 删除: $dir/ (空目录)"
+        fi
+        ;;
+      *)
+        rm -rf "$dir"
+        echo "  ✅ 删除: $dir/"
+        ;;
+    esac
   fi
 done
 
