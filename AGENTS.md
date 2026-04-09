@@ -113,23 +113,29 @@ This works with any tool that reads `AGENTS.md` from the project root.
 ## Quick Start
 
 ```
-/oa:propose <name>    → Create change proposal
-/oa:apply <name>      → Execute tasks from checklist
-/oa:validate <name>   → Validate spec format (runs scripts/validate-spec.sh)
-/oa:archive <name>    → Archive change and merge to specs (runs scripts/archive-change.sh)
-/oa:discuss <phase>  → Discuss and clarify requirements
-/oa:plan <phase>     → Plan atomic tasks
-/oa:execute <phase>  → Execute in waves
-/oa:verify <phase>   → Verify quality
-/oa:ship <phase>     → Ship and create PR
-/oa:team-plan        → Team planning (multi-agent orchestration)
-/oa:team-exec        → Team execution (parallel worktree)
-/oa:team-verify      → Team verification (review + security)
-/oa:brainstorm       → Brainstorming session
-/oa:tdd              → Test-driven development
-/oa:debug            → Systematic debugging
-/oa:review          → Code review
-/oa:worktree         → Git worktree isolation
+# Spec-Driven Workflow
+/oa-propose <name>      → Create change proposal
+/oa-apply <name>        → Execute tasks from checklist
+/oa-validate <name>     → Validate spec format
+/oa-archive <name>      → Archive change and merge to specs
+
+# Phase Execution Workflow
+/oa-discuss             → Discuss and clarify requirements (multi-round)
+/oa-plan                → Plan atomic tasks
+/oa-execute             → Execute in waves
+/oa-verify              → Verify quality
+/oa-ship                → Ship and create PR
+
+# Team Orchestration
+/oa-team-plan           → Team planning (multi-agent)
+/oa-team-exec           → Team execution (parallel worktree)
+/oa-team-verify         → Team verification (review + security)
+
+# Engineering Methodology
+/oa-brainstorming       → Brainstorming session (multi-round)
+/oa-debugging           → Systematic debugging (multi-round)
+/oa-writing-plans       → Plan writing (multi-round)
+/oa-worktree            → Git worktree isolation
 ```
 
 ## License

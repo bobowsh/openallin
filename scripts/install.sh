@@ -98,22 +98,13 @@ for tool in "${TOOLS[@]}"; do
       # 创建 .opencode 目录
       mkdir -p .opencode/{skills,agents,rules,commands}
 
-      # 转换 skills 格式
-      for skill in "$HARNESS_DIR/skills/"*.md; do
-        [ -f "$skill" ] || continue
-        name=$(basename "$skill" .md)
-        skill_dir=".opencode/skills/$name"
-        mkdir -p "$skill_dir"
-
-        if [ ! -f "$skill_dir/SKILL.md" ]; then
-          cat > "$skill_dir/SKILL.md" << EOF
----
-name: $name
-description: OpenAllIn $name skill — 工程方法论技能
----
-
-$(cat "$skill")
-EOF
+      # 复制所有 skills（包括 oa-* 命令）
+      for skill_dir in "$HARNESS_DIR/.opencode/skills/"*; do
+        [ -d "$skill_dir" ] || continue
+        name=$(basename "$skill_dir")
+        if [ ! -f ".opencode/skills/$name/SKILL.md" ]; then
+          mkdir -p ".opencode/skills/$name"
+          cp "$skill_dir/SKILL.md" ".opencode/skills/$name/"
           echo "  ✅ skill: $name"
         fi
       done
@@ -134,17 +125,6 @@ EOF
         if [ ! -f ".opencode/rules/$(basename "$rule")" ]; then
           cp "$rule" ".opencode/rules/"
           echo "  ✅ rule: $(basename "$rule")"
-        fi
-      done
-
-      # 复制 oa-* 命令 skills
-      for skill_dir in "$HARNESS_DIR/.opencode/skills/oa-"*; do
-        [ -d "$skill_dir" ] || continue
-        name=$(basename "$skill_dir")
-        if [ ! -f ".opencode/skills/$name/SKILL.md" ]; then
-          mkdir -p ".opencode/skills/$name"
-          cp "$skill_dir/SKILL.md" ".opencode/skills/$name/"
-          echo "  ✅ command: $name"
         fi
       done
 
@@ -186,34 +166,14 @@ EOF
       cp "$HARNESS_DIR/AGENTS.md" CLAUDE.md
       echo "  ✅ CLAUDE.md 已创建/更新"
 
-      # 转换 skills 格式
-      for skill in "$HARNESS_DIR/skills/"*.md; do
-        [ -f "$skill" ] || continue
-        name=$(basename "$skill" .md)
-        skill_dir=".claude/skills/$name"
-        mkdir -p "$skill_dir"
-
-        if [ ! -f "$skill_dir/SKILL.md" ]; then
-          cat > "$skill_dir/SKILL.md" << EOF
----
-name: $name
-description: OpenAllIn $name skill — 工程方法论技能
----
-
-$(cat "$skill")
-EOF
-          echo "  ✅ skill: $name"
-        fi
-      done
-
-      # 复制 oa-* 命令 skills (Claude Code 也需要)
-      for skill_dir in "$HARNESS_DIR/.opencode/skills/oa-"*; do
+      # 复制所有 skills（包括 oa-* 命令）
+      for skill_dir in "$HARNESS_DIR/.opencode/skills/"*; do
         [ -d "$skill_dir" ] || continue
         name=$(basename "$skill_dir")
         if [ ! -f ".claude/skills/$name/SKILL.md" ]; then
           mkdir -p ".claude/skills/$name"
           cp "$skill_dir/SKILL.md" ".claude/skills/$name/"
-          echo "  ✅ command: $name"
+          echo "  ✅ skill: $name"
         fi
       done
 
