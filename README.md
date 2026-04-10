@@ -505,7 +505,10 @@ bash scripts/init.sh
 /oa-plan <phase>              → Plan phase, split atomic tasks
 /oa-execute <phase>           → Execute phase, parallel waves
 /oa-verify <phase>            → Verify phase, quality gate
+/oa-review <phase>            → Review phase (code/design/architecture)
+/oa-security                  → Security audit (OWASP + STRIDE)
 /oa-ship <phase>              → Ship phase, create PR
+/oa-land                      → Land phase, deployment verification
 
 # Step 3: Team collaboration (multi-agent orchestration)
 # 团队协作（多代理编排）
@@ -520,6 +523,8 @@ bash scripts/init.sh
 /oa-tdd                          → Test-driven development (Red-Green-Refactor)
 /oa-writing-plans               → Plan writing (multi-round)
 /oa-worktree                    → Git Worktree isolation
+/oa-qa-browser                 → Browser testing (Playwright)
+/oa-benchmark                   → Performance testing
 ```
 
 ### Three Typical Workflows / 三种典型工作流

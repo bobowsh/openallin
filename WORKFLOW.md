@@ -66,13 +66,16 @@ Phase 3: 执行
 
 Phase 4: 验证
 7. /oa-verify <phase>      → 多维度验证
-   ├── 提取可验证交付物
-   ├── 逐项检查
-   └── 如有问题 → debug → 修复 → 重新验证
+   ├── /oa-review             → 代码/设计/架构审查
+   ├── /oa-security          → 安全审计（OWASP + STRIDE）
+   └── 如有问题 → debugging → 修复 → 重新验证
 
 Phase 5: 发布
 8. /oa-ship <phase>        → 创建 PR
-   └── 自动生成 PR 描述
+9. /oa-land                → 部署验证
+   ├── CI/CD 状态监控
+   ├── 烟雾测试
+   └── 回滚（如需要）
 ```
 
 **关键点**：

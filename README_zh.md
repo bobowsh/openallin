@@ -457,7 +457,10 @@ bash scripts/init.sh
 /oa-plan <phase>              → 计划阶段，拆分原子任务
 /oa-execute <phase>            → 执行阶段，波次并行
 /oa-verify <phase>            → 验证阶段，质量把关
+/oa-review <phase>            → 审查阶段（代码/设计/架构）
+/oa-security                   → 安全审计（OWASP + STRIDE）
 /oa-ship <phase>              → 发布阶段，创建 PR
+/oa-land                      → 部署验证
 
 # Step 3: 团队协作（多代理编排）
 /oa-team-plan                  → 团队规划
@@ -470,6 +473,8 @@ bash scripts/init.sh
 /oa-tdd                          → 测试驱动开发（Red-Green-Refactor）
 /oa-writing-plans               → 计划编写（多轮迭代）
 /oa-worktree                    → Git Worktree 隔离
+/oa-qa-browser                 → 浏览器测试（Playwright）
+/oa-benchmark                   → 性能测试
 ```
 
 ### 三种典型工作流
