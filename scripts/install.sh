@@ -164,6 +164,12 @@ for tool in "${TOOLS[@]}"; do
           echo "  ✅ rule: $(basename "$rule")"
         fi
       done
+      
+      # 复制 lib/ 目录（支持库）
+      if [ -d "$HARNESS_DIR/lib" ]; then
+        cp -rn "$HARNESS_DIR/lib" ".opencode/" 2>/dev/null || true
+        echo "  ✅ lib/ 支持库已复制"
+      fi
 
       # 创建/更新 opencode.json
       if [ -f "opencode.json" ]; then
@@ -232,6 +238,12 @@ EOF
           echo "  ✅ rule: $(basename "$rule")"
         fi
       done
+
+      # 复制 lib/ 目录（支持库）
+      if [ -d "$HARNESS_DIR/lib" ]; then
+        cp -rn "$HARNESS_DIR/lib" ".claude/" 2>/dev/null || true
+        echo "  ✅ lib/ 支持库已复制"
+      fi
 
       # 复制 hooks 文件（覆盖 stub 或旧版本）
       for hook in "$HARNESS_DIR/hooks/"*.js; do
@@ -338,16 +350,16 @@ EOF
       done
 
       # 复制 agents 和 rules
-      cp -n "$HARNESS_DIR/agents/"*.md ".claude/agents/" 2>/dev/null || true
-      cp -n "$HARNESS_DIR/rules/"*.md ".claude/rules/" 2>/dev/null || true
+      cp -n "$HARNESS_DIR/agents/"*.md ".openclaw/agents/" 2>/dev/null || true
+      cp -n "$HARNESS_DIR/rules/"*.md ".openclaw/rules/" 2>/dev/null || true
       
       # 复制 lib/ 目录（支持库）
       if [ -d "$HARNESS_DIR/lib" ]; then
-        cp -rn "$HARNESS_DIR/lib" ".claude/" 2>/dev/null || true
+        cp -rn "$HARNESS_DIR/lib" ".openclaw/" 2>/dev/null || true
         echo "  ✅ lib/ 支持库已复制"
       fi
 
-      echo "  ✅ Claude Code 安装完成"
+      echo "  ✅ OpenClaw 安装完成"
       ;;
 
     gemini)
