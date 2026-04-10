@@ -2,7 +2,7 @@
 
 > 一页纸记住所有命令、文件和规则
 
-## 命令速查 (17 个)
+## 命令速查 (21 个)
 
 | 命令 | 用途 | 触发层 | 多轮迭代 |
 |------|------|--------|----------|
@@ -20,6 +20,10 @@
 | `/oa-tdd` | 测试驱动开发 | Skills | ✅ Red-Green-Refactor |
 | `/oa-writing-plans` | 计划编写 | Skills | ✅ 4轮 |
 | `/oa-worktree` | Git Worktree 隔离 | Skills | - |
+| `/oa-security` | 安全审计 | Enhancement | - |
+| `/oa-land` | 部署验证 | Enhancement | - |
+| `/oa-qa-browser` | 浏览器测试 | Enhancement | - |
+| `/oa-benchmark` | 性能测试 | Enhancement | - |
 | `/oa-team-plan` | 团队规划 | Orchestration | - |
 | `/oa-team-exec` | 团队执行 | Orchestration | - |
 | `/oa-team-verify` | 团队验证 | Orchestration | - |
@@ -70,6 +74,10 @@
 | 开始分支 | worktree-isolation |
 | 多步任务 | writing-plans |
 | 声称完成前 | verification |
+| 安全检查 | oa-security |
+| 部署/上线 | oa-land |
+| 浏览器测试 | oa-qa-browser |
+| 性能测试 | oa-benchmark |
 
 ## 配置预设
 

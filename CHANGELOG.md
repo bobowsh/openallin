@@ -2,7 +2,74 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v1.3.0] - 2026-04-10
+## [v1.5.0] - 2026-04-10
+
+### Added
+- **/oa-qa-browser command**: Real browser testing with Playwright
+  - Visual regression tests (screenshot comparison)
+  - Functional tests (user flows)
+  - Accessibility tests (WCAG 2.1 compliance)
+  - Performance tests (Core Web Vitals)
+  - Browser coverage: Chromium, Firefox, WebKit, Mobile viewports
+- **/oa-benchmark command**: Automated performance testing and benchmarking
+  - API response time benchmarks (average, p95, p99)
+  - Page load time benchmarks
+  - Database query benchmarks
+  - Resource usage benchmarks (memory, CPU)
+  - Concurrent load benchmarks
+  - Baseline comparison with regression detection
+- **Browser testing library**: `lib/browser/`
+  - `playwright-config.md`: Playwright setup and configuration guide
+  - `test-templates.md`: Ready-to-use browser test templates
+- **Performance testing library**: `lib/performance/`
+  - `benchmark-templates.md`: API, page load, database, and resource benchmarks
+- **Natural language routing examples**:
+  - Browser testing: "浏览器测试", "browser test", "视觉回归测试"
+  - Performance: "性能测试", "benchmark", "API 性能基准"
+
+### Changed
+- **Updated QUICKREF.md**: Command count increased from 19 to 21
+- **Updated USAGE.md**: Added browser testing and performance routing examples
+- **Updated USAGE_EN.md**: Added browser testing and performance routing examples in English
+- **Updated skill trigger table**: Added "浏览器测试 → oa-qa-browser" and "性能测试 → oa-benchmark"
+
+### Documentation
+- All documentation now consistent: 21 skills, Phase 1 + Phase 2 complete
+
+---
+
+## [v1.4.0] - 2026-04-10
+
+### Added
+- **/oa-security command**: Automated security audit using OWASP Top 10 and STRIDE threat modeling
+  - Detects common vulnerabilities (SQL injection, XSS, hardcoded secrets, etc.)
+  - Severity classification (Critical/High/Medium/Low)
+  - Blocks `/oa-ship` if critical/high issues found
+  - Integration points: after `/oa-execute`, before `/oa-ship`
+- **/oa-land command**: Deployment verification after merge
+  - Monitors CI/CD pipeline status
+  - Runs smoke tests on deployed environment
+  - Generates rollback plan if deployment fails
+  - Integration points: after `/oa-ship` and `/oa-merge`
+- **Security library**: `lib/security/`
+  - `checklist.md`: Quick reference for OWASP Top 10 and STRIDE
+  - `patterns.md`: Detailed vulnerability patterns with detection and fixes
+- **Deployment library**: `lib/deploy/`
+  - `smoke-tests.md`: Smoke test templates for deployment verification
+  - `rollback.md`: Rollback procedures for various platforms (Git, Kubernetes, AWS, Heroku, Docker)
+- **Natural language routing examples**:
+  - Security: "检查安全性", "security review", "安全审计"
+  - Deployment: "部署", "deploy", "land", "上线"
+
+### Changed
+- **Updated QUICKREF.md**: Command count increased from 17 to 19
+- **Updated USAGE.md**: Added security and deployment routing examples
+- **Updated USAGE_EN.md**: Added security and deployment routing examples in English
+- **Updated skill trigger table**: Added "安全检查 → oa-security" and "部署/上线 → oa-land"
+
+### Documentation
+- Created `docs/GSTACK_INTEGRATION_PLAN.md`: Detailed implementation plan for borrowing GStack features
+- All documentation now consistent: 19 skills, Phase 1 complete
 
 ### Added
 - **Auto-detect 10+ CLI tools**: OpenCode, Claude Code, Cursor, Codex, OpenClaw, Gemini CLI, Windsurf, Kilo Code, Augment, Zed

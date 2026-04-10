@@ -664,6 +664,34 @@ AI will automatically:
 | "Page shows error: XXX" | Analyze error → Fix |
 | "Tests failing: XXX" | Locate issue → Fix |
 
+#### Security
+
+| What You Say | What AI Does |
+|--------------|--------------|
+| "Check security" | Call `/oa-security` |
+| "Security audit" | Call `/oa-security` |
+| "Does this code have security vulnerabilities?" | Call `/oa-security` + analyze |
+| "Review security" | OWASP + STRIDE check |
+
+#### Deployment
+
+| What You Say | What AI Does |
+|--------------|--------------|
+| "Deploy to production" | Call `/oa-land` |
+| "Go live" | Call `/oa-land` |
+| "Check deployment status" | Call `/oa-land` + smoke tests |
+| "Deployment failed, rollback" | Generate rollback plan |
+
+#### Testing
+
+| What You Say | What AI Does |
+|--------------|--------------|
+| "Browser test" | Call `/oa-qa-browser` |
+| "Visual regression test" | Call `/oa-qa-browser` + visual check |
+| "Accessibility test" | Call `/oa-qa-browser` + WCAG check |
+| "Performance test" | Call `/oa-benchmark` |
+| "API performance benchmark" | Call `/oa-benchmark` + API benchmark |
+
 #### Queries
 
 | What You Say | What AI Does |
