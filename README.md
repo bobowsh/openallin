@@ -73,7 +73,7 @@ AI coding tools are powerful, but 6 common instabilities often emerge in practic
 ```
 AGENTS.md                ← Unified entry point for AI tools
     ↓
-skills/oa-*/           ← 17 commands (oa-propose, oa-brainstorming, oa-tdd, etc.)
+skills/oa-*/           ← 22 commands (oa-propose, oa-brainstorming, oa-tdd, oa-security, oa-review, etc.)
 rules/*.md               ← Coding standards, security rules
 agents/*.md              ← Agent role definitions (planner/implementer/reviewer)
 changes/<name>/          ← Each change: proposal → design → spec → tasks
@@ -118,7 +118,7 @@ AI 编程工具越来越强大，但实际使用中总会遇到 6 大不稳定�
 ```
 AGENTS.md                ← AI 工具的统一入口
     ↓
-skills/oa-*/           ← 17 个命令（oa-propose, oa-brainstorming, oa-tdd 等）
+skills/oa-*/           ← 22 个命令（oa-propose, oa-brainstorming, oa-tdd, oa-security, oa-review 等）
 rules/*.md               ← 编码规范、安全规则
 agents/*.md              ← Agent 角色定义（planner/implementer/reviewer）
 changes/<name>/          ← 每个变更：proposal → design → spec → tasks
@@ -528,7 +528,7 @@ bash scripts/init.sh
 |----------|-------------|
 | **README.md** | Project introduction and installation guide / 项目介绍和安装指南 |
 | **README_zh.md** | Chinese version / 中文版 |
-| **QUICKREF.md** | Quick reference card (17 commands) / 快速参考卡 |
+| **QUICKREF.md** | Quick reference card (22 commands) / 快速参考卡 |
 | **WORKFLOW.md** | Detailed workflows / 详细工作流程 |
 | **USAGE.md** | User guide (Chinese) / 使用手册（中文） |
 | **USAGE_EN.md** | User guide (English) / 使用手册（英文） |
