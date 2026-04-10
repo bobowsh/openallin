@@ -101,6 +101,22 @@ DOMAIN_CONFIG = {
             "impact_score",
         ],
     },
+    "techstack": {
+        "file": "techstack.csv",
+        "search_cols": ["stack", "best_for", "notes"],
+        "output_cols": [
+            "stack",
+            "category",
+            "component_pattern",
+            "state_management",
+            "styling_approach",
+            "routing",
+            "optimization",
+            "testing_framework",
+            "best_for",
+            "notes",
+        ],
+    },
 }
 
 
@@ -255,6 +271,21 @@ def detect_domain(query):
             "touch",
             "animation",
             "keyboard",
+        ],
+        "techstack": [
+            "react",
+            "vue",
+            "nextjs",
+            "flutter",
+            "swiftui",
+            "tailwind",
+            "技术栈",
+            "框架",
+            "stack",
+            "tailwind",
+            "angular",
+            "svelte",
+            "astro",
         ],
     }
 

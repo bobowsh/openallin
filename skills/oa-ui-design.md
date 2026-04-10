@@ -5,19 +5,7 @@ description: OpenAllIn /oa-ui-design 命令 — 专业 UI/UX 设计智能系统
 
 # /oa-ui-design — UI/UX Design Intelligence
 
-> AI-powered design system generation with 161 industry rules, 67 styles, and professional recommendations.
-
-## Purpose
-
-Generate complete, professional design systems for any project type. Provides intelligent recommendations for patterns, styles, colors, typography, and effects based on industry best practices.
-
-## When to Use
-
-- When starting a new UI/UX project
-- When creating landing pages, dashboards, or mobile apps
-- When needing design system recommendations
-- When user asks: "设计 UI", "design landing page", "配色方案", "设计系统"
-- Integration points: after `/oa-brainstorming`, before `/oa-execute`
+> AI-powered design system generation with 126 product types, 71 UI styles, and professional recommendations.
 
 ## Workflow
 
@@ -82,9 +70,24 @@ graph TD
 +----------------------------------------------------------------------------------------+
 ```
 
-## Industry Categories (161 Rules)
+## Data Files (327 Total Entries)
 
-### Tech & SaaS
+### CSV Data Files
+- `styles.csv` — 70 UI styles (minimal, glassmorphism, neumorphism, etc.)
+- `products.csv` — 125 industry/product types (fintech, healthcare, ecommerce, etc.)
+- `colors.csv` — 16 color palettes
+- `typography.csv` — 66 font pairings
+- `landing.csv` — 12 landing page patterns
+- `ux.csv` — 20 UX principles
+- `techstack.csv` — 15 tech stack guidelines
+
+### Scripts
+- `core.py` — BM25 search engine (Okapi BM25 implementation)
+- `design_system.py` — Design system generator
+
+### Industry Categories (125 Product Types)
+
+### Tech & SaaS (20+)
 - SaaS, Micro SaaS, B2B Service
 - Developer Tool / IDE, AI/Chatbot Platform
 - Cybersecurity Platform, DevOps Tool
@@ -116,7 +119,7 @@ graph TD
 ### Emerging Tech
 - Web3/NFT, Spatial Computing, Quantum Computing
 
-## Available UI Styles (67)
+## Available UI Styles (70)
 
 ### General Styles (49)
 
@@ -169,7 +172,7 @@ Each industry has recommended color moods:
 | Gaming | Vibrant, Immersive | Neon, Purple, Dark themes |
 | Enterprise | Professional, Clean | Blue, Gray, White |
 
-## Typography Pairings (57)
+## Typography Pairings (66)
 
 | Mood | Primary Font | Secondary Font | Best For |
 |------|--------------|----------------|---------|
