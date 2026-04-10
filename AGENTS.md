@@ -118,20 +118,19 @@ This works with any tool that reads `AGENTS.md` from the project root.
 /oa-apply <name>        → Execute tasks from checklist
 /oa-validate <name>     → Validate spec format
 /oa-archive <name>      → Archive change and merge to specs
-
-# Phase Execution Workflow
 /oa-discuss             → Discuss and clarify requirements (multi-round)
 /oa-plan                → Plan atomic tasks
 /oa-execute             → Execute in waves
 /oa-verify              → Verify quality
 /oa-ship                → Ship and create PR
-
-# Team Orchestration
+/oa-review              → Code/design/architecture review
+/oa-security            → Security audit (OWASP + STRIDE)
+/oa-land                → Deployment verification
+/oa-qa-browser          → Browser testing (Playwright)
+/oa-benchmark           → Performance testing
 /oa-team-plan           → Team planning (multi-agent)
 /oa-team-exec           → Team execution (parallel worktree)
 /oa-team-verify         → Team verification (review + security)
-
-# Engineering Methodology
 /oa-brainstorming       → Brainstorming session (multi-round)
 /oa-debugging           → Systematic debugging (multi-round)
 /oa-tdd                 → Test-driven development (Red-Green-Refactor)

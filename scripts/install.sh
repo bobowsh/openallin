@@ -338,10 +338,16 @@ EOF
       done
 
       # 复制 agents 和 rules
-      cp -n "$HARNESS_DIR/agents/"*.md ".openclaw/agents/" 2>/dev/null || true
-      cp -n "$HARNESS_DIR/rules/"*.md ".openclaw/rules/" 2>/dev/null || true
+      cp -n "$HARNESS_DIR/agents/"*.md ".claude/agents/" 2>/dev/null || true
+      cp -n "$HARNESS_DIR/rules/"*.md ".claude/rules/" 2>/dev/null || true
+      
+      # 复制 lib/ 目录（支持库）
+      if [ -d "$HARNESS_DIR/lib" ]; then
+        cp -rn "$HARNESS_DIR/lib" ".claude/" 2>/dev/null || true
+        echo "  ✅ lib/ 支持库已复制"
+      fi
 
-      echo "  ✅ OpenClaw 安装完成"
+      echo "  ✅ Claude Code 安装完成"
       ;;
 
     gemini)
@@ -364,6 +370,12 @@ EOF
         cp "$skill_file" ".gemini/skills/$name/SKILL.md"
         echo "  ✅ command: $name"
       done
+      
+      # 复制 lib/ 目录（支持库）
+      if [ -d "$HARNESS_DIR/lib" ]; then
+        cp -rn "$HARNESS_DIR/lib" ".gemini/" 2>/dev/null || true
+        echo "  ✅ lib/ 支持库已复制"
+      fi
 
       echo "  ✅ Gemini CLI 安装完成"
       ;;
