@@ -286,7 +286,7 @@ claude
 - ✅ 你希望用对话方式完成安装
 - ✅ 你想让 AI 自动处理配置细节
 
-### 方式 1：在现有项目中安装
+### 方式 1：提供 Git 地址安装
 
 **步骤 1：打开你的项目**
 
@@ -295,10 +295,16 @@ cd /path/to/your-project
 opencode  # 或 claude
 ```
 
-**步骤 2：对 AI 说**
+**步骤 2：对 AI 说（必须提供 Git 地址）**
 
 ```
-请帮我安装 OpenAllIn
+请帮我安装 OpenAllIn：https://github.com/vanrayliu/openallin
+```
+
+或完整地址：
+
+```
+请帮我安装 OpenAllIn：https://github.com/vanrayliu/openallin.git
 ```
 
 **AI 会做什么：**
@@ -322,6 +328,35 @@ AI: 好的，我来帮你安装 OpenAllIn。
 - 编辑 project.md 填入项目信息
 - 使用 /oa-brainstorming 开始头脑风暴
 - 使用 /oa-propose <name> 创建变更提案
+```
+
+---
+
+### 方式 2：克隆后安装
+
+**步骤 1：先克隆 OpenAllIn 仓库**
+
+```bash
+git clone https://github.com/vanrayliu/openallin.git
+cd openallin
+opencode  # 或 claude
+```
+
+**步骤 2：对 AI 说**
+
+```
+帮我安装到 /path/to/my-project
+```
+
+**AI 会做什么：**
+
+```
+AI: 好的，我来帮你安装到指定目录。
+
+1. 检测到当前在 OpenAllIn 仓库目录
+2. 运行安装脚本...
+   ✅ bash scripts/install.sh --target /path/to/my-project
+3. 安装完成！
 ```
 
 **步骤 3：验证安装**
@@ -362,71 +397,38 @@ AI: 检查安装状态...
 
 ---
 
-### 方式 2：创建新项目并安装
-
-**步骤 1：创建项目目录并打开 AI 工具**
-
-```bash
-mkdir my-new-project
-cd my-new-project
-opencode  # 或 claude
-```
-
-**步骤 2：对 AI 说**
-
-```
-帮我创建一个新项目，并安装 OpenAllIn
-```
-
-**AI 会做什么：**
-
-```
-AI: 好的，我来帮你创建新项目并安装 OpenAllIn。
-
-1. 初始化 Git 仓库...
-   ✅ git init
-
-2. 克隆并安装 OpenAllIn...
-   ✅ 安装所有组件
-
-3. 初始化项目结构...
-   ✅ 创建 workspace/STATE.md
-   ✅ 创建 workspace/ROADMAP.md
-   ✅ 创建 config/settings.json
-
-4. 项目已准备就绪！
-
-接下来你需要：
-1. 编辑 project.md 填入项目信息
-2. 初始化你的技术栈（npm init / go mod init 等）
-
-要我帮你初始化什么技术栈吗？比如：
-- "初始化一个 React + TypeScript 项目"
-- "初始化一个 Go 项目"
-- "初始化一个 Python FastAPI 项目"
-```
-
----
-
-### 方式 3：指定安装配置
-
-**只安装特定组件：**
-
-```
-只安装 OpenAllIn 的 brainstorming 和 tdd 命令
-```
+### 方式 4：指定安装配置
 
 **指定 CLI 工具：**
 
 ```
-我是用 Claude Code 的，帮我安装 OpenAllIn
+我是用 Claude Code 的，帮我安装 OpenAllIn：https://github.com/vanrayliu/openallin
 ```
 
 **同时安装到多个工具：**
 
 ```
-帮我同时安装到 OpenCode 和 Claude Code
+帮我同时安装到 OpenCode 和 Claude Code：https://github.com/vanrayliu/openallin
 ```
+
+**只安装特定组件：**
+
+```
+只安装 OpenAllIn 的 brainstorming 和 tdd 命令：https://github.com/vanrayliu/openallin
+```
+
+---
+
+### 为什么需要提供 Git 地址？
+
+AI 助手无法预知你要安装的项目来源，因此需要你提供：
+
+| 场景 | 你需要提供 |
+|------|----------|
+| 从 GitHub 安装 | `https://github.com/vanrayliu/openallin` |
+| 从 Gitee 安装 | `https://gitee.com/yourname/openallin` |
+| 从私有仓库安装 | `git@github.com:yourname/openallin.git` |
+| 本地已克隆 | 先 `cd openallin`，再说"帮我安装到 xxx" |
 
 ---
 
@@ -453,11 +455,11 @@ AI 会更新 `rules/coding-standards.md` 和 `rules/commit-rules.md`。
 
 ---
 
-### 常用自然语言命令速查
+### 常用自然语言安装命令速查
 
 | 你说的 | AI 做的事 |
 |--------|----------|
-| "安装 OpenAllIn" | 执行完整安装流程 |
+| "安装 OpenAllIn：https://github.com/vanrayliu/openallin" | 执行完整安装流程 |
 | "检查安装状态" | 验证所有组件是否正确安装 |
 | "卸载 OpenAllIn" | 运行卸载脚本 |
 | "更新 OpenAllIn" | 重新安装最新版本 |

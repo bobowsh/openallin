@@ -286,7 +286,7 @@ claude
 - ✅ You prefer conversational installation
 - ✅ You want AI to handle configuration details automatically
 
-### Method 1: Install in Existing Project
+### Method 1: Provide Git URL to Install
 
 **Step 1: Open Your Project**
 
@@ -295,10 +295,16 @@ cd /path/to/your-project
 opencode  # or claude
 ```
 
-**Step 2: Tell the AI**
+**Step 2: Tell the AI (Must provide Git URL)**
 
 ```
-Please install OpenAllIn for me
+Please install OpenAllIn for me: https://github.com/vanrayliu/openallin
+```
+
+Or with full URL:
+
+```
+Please install OpenAllIn for me: https://github.com/vanrayliu/openallin.git
 ```
 
 **What AI Will Do:**
@@ -322,6 +328,35 @@ Next steps:
 - Edit project.md with your project information
 - Use /oa-brainstorming to start brainstorming
 - Use /oa-propose <name> to create change proposals
+```
+
+---
+
+### Method 2: Clone Then Install
+
+**Step 1: Clone OpenAllIn Repository First**
+
+```bash
+git clone https://github.com/vanrayliu/openallin.git
+cd openallin
+opencode  # or claude
+```
+
+**Step 2: Tell the AI**
+
+```
+Help me install to /path/to/my-project
+```
+
+**What AI Will Do:**
+
+```
+AI: Sure, I'll install to the specified directory.
+
+1. Detected current directory is OpenAllIn repository
+2. Running installation script...
+   ✅ bash scripts/install.sh --target /path/to/my-project
+3. Installation complete!
 ```
 
 **Step 3: Verify Installation**
@@ -362,71 +397,38 @@ AI: Checking installation status...
 
 ---
 
-### Method 2: Create New Project and Install
-
-**Step 1: Create Project Directory and Open AI Tool**
-
-```bash
-mkdir my-new-project
-cd my-new-project
-opencode  # or claude
-```
-
-**Step 2: Tell the AI**
-
-```
-Create a new project and install OpenAllIn
-```
-
-**What AI Will Do:**
-
-```
-AI: Sure, I'll create a new project and install OpenAllIn.
-
-1. Initializing Git repository...
-   ✅ git init
-
-2. Cloning and installing OpenAllIn...
-   ✅ All components installed
-
-3. Initializing project structure...
-   ✅ Created workspace/STATE.md
-   ✅ Created workspace/ROADMAP.md
-   ✅ Created config/settings.json
-
-4. Project is ready!
-
-Next, you need to:
-1. Edit project.md with your project information
-2. Initialize your tech stack (npm init / go mod init, etc.)
-
-Would you like me to initialize a specific tech stack? For example:
-- "Initialize a React + TypeScript project"
-- "Initialize a Go project"
-- "Initialize a Python FastAPI project"
-```
-
----
-
 ### Method 3: Specify Installation Options
-
-**Install specific components only:**
-
-```
-Only install OpenAllIn's brainstorming and tdd commands
-```
 
 **Specify CLI tool:**
 
 ```
-I'm using Claude Code, please install OpenAllIn
+I'm using Claude Code, please install OpenAllIn: https://github.com/vanrayliu/openallin
 ```
 
 **Install to multiple tools:**
 
 ```
-Install to both OpenCode and Claude Code
+Install to both OpenCode and Claude Code: https://github.com/vanrayliu/openallin
 ```
+
+**Install specific components only:**
+
+```
+Only install OpenAllIn's brainstorming and tdd commands: https://github.com/vanrayliu/openallin
+```
+
+---
+
+### Why Must I Provide Git URL?
+
+AI assistants cannot predict your project source, so you need to provide it:
+
+| Scenario | What to Provide |
+|----------|-----------------|
+| Install from GitHub | `https://github.com/vanrayliu/openallin` |
+| Install from Gitee | `https://gitee.com/yourname/openallin` |
+| Install from private repo | `git@github.com:yourname/openallin.git` |
+| Already cloned locally | First `cd openallin`, then say "install to xxx" |
 
 ---
 
@@ -453,11 +455,11 @@ AI will update `rules/coding-standards.md` and `rules/commit-rules.md`.
 
 ---
 
-### Natural Language Commands Quick Reference
+### Natural Language Installation Commands Quick Reference
 
 | What You Say | What AI Does |
 |--------------|--------------|
-| "Install OpenAllIn" | Execute full installation |
+| "Install OpenAllIn: https://github.com/vanrayliu/openallin" | Execute full installation |
 | "Check installation status" | Verify all components |
 | "Uninstall OpenAllIn" | Run uninstall script |
 | "Update OpenAllIn" | Reinstall latest version |
