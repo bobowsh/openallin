@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.7.0] - 2026-04-11
+
+### Added
+- **/oa-ui-design command**: Professional UI/UX design intelligence system
+  - 161 industry-specific design rules (Tech, Finance, Healthcare, E-commerce, Services, Creative, Lifestyle, Emerging Tech)
+  - 67 UI styles (Minimalism, Glassmorphism, Neumorphism, Brutalism, Dark Mode, Bento Grid, AI-Native UI, Spatial UI, etc.)
+  - 161 color palettes with industry-appropriate recommendations
+  - 57 typography pairings (Google Fonts compatible)
+  - 15 tech stack guidelines (React, Next.js, Vue, SwiftUI, Flutter, etc.)
+  - Pre-delivery checklist (accessibility, responsiveness, performance, interaction)
+  - Anti-patterns detection (what NOT to do)
+  - Integration points: after `/oa-brainstorming`, before `/oa-execute`
+- **UI design library**: `lib/ui-design/quick-reference.md`
+  - Industry → Pattern mapping
+  - Industry → Color mood recommendations
+  - Industry → Typography mood recommendations
+  - UI style selection guide
+  - Color contrast quick reference
+  - Animation timing guide
+  - Font loading best practices
+- **Inspired by UI UX Pro Max**: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill (62.4K stars)
+
+### Changed
+- **Updated AGENTS.md**: Added `/oa-ui-design` command (23 commands)
+- **Updated QUICKREF.md**: Command count increased from 22 to 23
+- **Updated README.md**: Added skill file and lib directory, updated command counts
+- **Updated README_zh.md**: Added skill file and lib directory, updated command counts
+
+### Documentation
+- All documentation now consistent: 23 skills (extended from 20-22 target)
+- Total: 23 commands ✅
+- Total lib directories: 6 (security, deploy, browser, performance, review, ui-design)
+
+---
+
 ## [v1.6.0] - 2026-04-10
 
 ### Added

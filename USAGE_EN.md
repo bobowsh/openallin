@@ -707,6 +707,17 @@ AI will follow the recommended workflow:
 | "Architecture review" | Call `/oa-review` + architecture check |
 | "Review UI/UX" | Call `/oa-review` + UI/UX check |
 
+#### Design
+
+| What You Say | What AI Does |
+|--------------|--------------|
+| "Design UI" | Call `/oa-ui-design` |
+| "Generate design system" | Call `/oa-ui-design` + output design system |
+| "Color palette" | Call `/oa-ui-design` + color recommendations |
+| "Design landing page" | Call `/oa-ui-design` + landing page pattern |
+| "UI style recommendations" | Call `/oa-ui-design` + style recommendations |
+| "Font pairing" | Call `/oa-ui-design` + typography recommendations |
+
 #### Queries
 
 | What You Say | What AI Does |

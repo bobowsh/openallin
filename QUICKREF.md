@@ -2,7 +2,7 @@
 
 > 一页纸记住所有命令、文件和规则
 
-## 命令速查 (22 个)
+## 命令速查 (23 个)
 
 | 命令 | 用途 | 触发层 | 多轮迭代 |
 |------|------|--------|----------|
@@ -20,6 +20,7 @@
 | `/oa-tdd` | 测试驱动开发 | Skills | ✅ Red-Green-Refactor |
 | `/oa-writing-plans` | 计划编写 | Skills | ✅ 4轮 |
 | `/oa-worktree` | Git Worktree 隔离 | Skills | - |
+| `/oa-ui-design` | UI/UX 设计智能 | Skills | - |
 | `/oa-review` | 代码/设计/架构审查 | Enhancement | - |
 | `/oa-security` | 安全审计 | Enhancement | - |
 | `/oa-land` | 部署验证 | Enhancement | - |

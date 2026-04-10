@@ -73,7 +73,7 @@ AI coding tools are powerful, but 6 common instabilities often emerge in practic
 ```
 AGENTS.md                ← Unified entry point for AI tools
     ↓
-skills/oa-*/           ← 22 commands (oa-propose, oa-brainstorming, oa-tdd, oa-security, oa-review, etc.)
+skills/oa-*/           ← 23 commands (oa-propose, oa-brainstorming, oa-tdd, oa-security, oa-review, oa-ui-design, etc.)
 rules/*.md               ← Coding standards, security rules
 agents/*.md              ← Agent role definitions (planner/implementer/reviewer)
 changes/<name>/          ← Each change: proposal → design → spec → tasks
@@ -118,7 +118,7 @@ AI 编程工具越来越强大，但实际使用中总会遇到 6 大不稳定�
 ```
 AGENTS.md                ← AI 工具的统一入口
     ↓
-skills/oa-*/           ← 22 个命令（oa-propose, oa-brainstorming, oa-tdd, oa-security, oa-review 等）
+skills/oa-*/           ← 23 个命令（oa-propose, oa-brainstorming, oa-tdd, oa-security, oa-review, oa-ui-design 等）
 rules/*.md               ← 编码规范、安全规则
 agents/*.md              ← Agent 角色定义（planner/implementer/reviewer）
 changes/<name>/          ← 每个变更：proposal → design → spec → tasks
@@ -212,7 +212,8 @@ openallin/
 │   ├── oa-land.md             # Deployment verification
 │   ├── oa-qa-browser.md       # Browser testing (Playwright)
 │   ├── oa-benchmark.md        # Performance testing
-│   └── oa-review.md           # Code/design/architecture review
+│   ├── oa-review.md           # Code/design/architecture review
+│   └── oa-ui-design.md        # UI/UX design intelligence
 │
 ├── lib/                         # [Skills Layer] Supporting libraries
 │   ├── security/               # Security audit library
@@ -226,9 +227,11 @@ openallin/
 │   │   └── test-templates.md   # Test templates
 │   ├── performance/            # Performance testing library
 │   │   └── benchmark-templates.md # Benchmark templates
-│   └── review/                 # Review library
-│       ├── design-checklist.md # UI/UX design checklist
-│       └── architecture-checklist.md # Architecture checklist
+│   ├── review/                 # Review library
+│   │   ├── design-checklist.md # UI/UX design checklist
+│   │   └── architecture-checklist.md # Architecture checklist
+│   └── ui-design/              # UI design library
+│       └── quick-reference.md  # Design patterns & recommendations
 │
 ├── agents/                      # [Orchestration Layer] Agent definitions
 │   ├── planner.md              # Architect/planner (high-level reasoning)
@@ -523,6 +526,7 @@ bash scripts/init.sh
 /oa-tdd                          → Test-driven development (Red-Green-Refactor)
 /oa-writing-plans               → Plan writing (multi-round)
 /oa-worktree                    → Git Worktree isolation
+/oa-ui-design                   → UI/UX design intelligence
 /oa-qa-browser                 → Browser testing (Playwright)
 /oa-benchmark                   → Performance testing
 ```
@@ -554,7 +558,7 @@ bash scripts/init.sh
 |----------|-------------|
 | **README.md** | Project introduction and installation guide / 项目介绍和安装指南 |
 | **README_zh.md** | Chinese version / 中文版 |
-| **QUICKREF.md** | Quick reference card (22 commands) / 快速参考卡 |
+| **QUICKREF.md** | Quick reference card (23 commands) / 快速参考卡 |
 | **WORKFLOW.md** | Detailed workflows / 详细工作流程 |
 | **USAGE.md** | User guide (Chinese) / 使用手册（中文） |
 | **USAGE_EN.md** | User guide (English) / 使用手册（英文） |

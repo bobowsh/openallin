@@ -124,6 +124,7 @@ This works with any tool that reads `AGENTS.md` from the project root.
 /oa-verify              → Verify quality
 /oa-ship                → Ship and create PR
 /oa-review              → Code/design/architecture review
+/oa-ui-design           → UI/UX design intelligence system
 /oa-security            → Security audit (OWASP + STRIDE)
 /oa-land                → Deployment verification
 /oa-qa-browser          → Browser testing (Playwright)
