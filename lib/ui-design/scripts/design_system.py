@@ -62,9 +62,18 @@ def main():
     parser.add_argument("--industry", help="Industry type")
     parser.add_argument("--product", help="Product type")
     parser.add_argument("--mood", help="Design mood")
-parser.add_argument(
+    parser.add_argument(
         "--domain",
-        choices=["style", "product", "color", "typography", "landing", "ux", "techstack", "ui-reasoning"],
+        choices=[
+            "style",
+            "product",
+            "color",
+            "typography",
+            "landing",
+            "ux",
+            "techstack",
+            "ui-reasoning",
+        ],
         help="Search domain",
     )
     parser.add_argument("--full", action="store_true", help="Generate full system")
