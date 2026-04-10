@@ -1,0 +1,21 @@
+ux_principle,category,description,implementation,hierarchy_level,wcag_level,impact_score
+clear_hierarchy,information_design,establish visual importance through size/color/position,heading hierarchy+visual_weight+spacing,primary,AAA,9
+accessible_forms,inclusive_design,labels+errors+focus states for all users,label_visibility+error_messages+focus_indicators,form,AA,8
+consistent_navigation,usability,same nav structure across all screens,fixed_nav_patterns+predictable_locations,global,AA,7
+feedback_systems,interaction_design,immediate visual feedback for actions,loading_states+success_errors+progress,interaction,AA,6
+error_prevention,user_experience,prevent errors before they occur,validation+confirmation+undo_options,form,AA,7
+mobile_optimization,responsive_design,optimize for touch and small screens,touch_targets+spacing+responsive_layout,viewport,AA,8
+progressive_disclosure,cognitive_load,reveal complexity progressively,expandable_content+guided_tours+steps,information,AAA,5
+sufficient_contrast,visual_accessibility,4.5:1 contrast for text,WCAG_contrast_check+color_pairs,visual,AA,9
+touch_targets,mobile_accessibility,48px minimum touch size,min_height_width+spacing,interaction,AA,7
+keyboard_navigation,accessibility,complete keyboard functionality,focus_management+shortcuts+tab_order,global,AAA,8
+screen_reader_ready,accessibility,semantic HTML and ARIA labels,semantic_markup+aria_attributes+alt_text,content,AAA,7
+color_independence,accessibility,information not dependent on color,text_labels+patterns+icons,visual,AA,6
+motion_control,inclusive_design,user control over animations,pause_controls+reduce_motion_preferences,interaction,AAA,4
+cognitive_simplification,cognitive_accessibility,simple language and clear instructions,plain_language+step_guidance+examples,content,AAA,7
+task_completion,usability,clear paths to goal completion,defined_steps+progress_indicators+completion_states,workflow,AA,8
+information_density,cognitive_load,balance content and whitespace,grouping+chunking+visual_breaks,content,AA,6
+personalization,user_experience,adapt to user preferences,preferences+customization+adaptive_content,user,AAA,5
+cross_platform_consistency,multi_device,similar experience across platforms,consistent_patterns+synced_state,global,AA,6
+performance_optimization,technical_usability,fast load and response times,lazy_loading+caching+optimization,technical,AA,8
+onboarding_flow,first_time_experience,guide new users effectively,tutorials+empty_states+progressive_features,onboarding,AA,7

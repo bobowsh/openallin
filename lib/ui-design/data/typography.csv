@@ -1,0 +1,13 @@
+font_pairing,heading_font,body_font,sizescale,weight_range,use_case,character,industries
+geometric_modern,Inter/Manrope,Inter/Open Sans,72/48/32/24/18/16,700/600/500/400,tech_startups,clean_modern,saas/tech/apps
+serif_editorial,Merriweather/Georgia,Lora/Open Sans,64/48/36/24/18/16,700/400/300,news_blogs,classic_authoritative,media/publishing/luxury
+rounded_friendly,Nunito/Poppins,Nunito/Open Sans,64/48/32/24/18/16,700/600/400,consumer_apps,approachable_warm,food/family/social
+mono_technical,JetBrains Mono/Fira Code,Inter/Open Sans,64/48/32/24/18/16,600/500/400,developer_tools,technical_clean,dev_tools/code_editors
+minimal_sans,Helvetica/Arial,Helvetica/Arial,72/48/32/24/18/16,700/500/400,enterprise_business,neutral_professional,b2b/enterprise/legal
+display_dramatic,Playfair Display/Cormorant,Inter/Open Sans,80/56/40/28/20/16,700/400/300,luxury_premium,elegant_sophisticated,luxury/fashion/real_estate
+casual_handwritten,Caveat/Kalam,Inter/Open Sans,64/48/32/24/18/16,400/700/600,kids_playful,fun_approachable,kids/family/casual_games
+condensed_impact,Oswald/Archivo Narrow,Inter/Open Sans,72/48/36/24/18/16,700/600/500,sports_action,dynamic_bold,sports/fitness/action_apps
+slab_confident,Roboto Slab/Zilla Slab,Inter/Open Sans,64/48/32/24/18/16,700/500/400,startup_confident,friendly_confident,education/community/startups
+unicode_global,Noto Sans/Noto Serif,Noto Sans,64/48/32/24/18/16,400/500/600,international,universal_accessible,global_products/multilingual
+system_default,System UI/San Francisco,system-ui/-apple-system,64/48/32/24/18/16,700/500/400,native_apps,platform_consistent,mobile_apps/native_ui
+light_minimal,Inter/System UI,Inter/System UI,80/56/40/24/18/16,300/400/500,minimalist,airy_refined,minimal_products/luxury_lifestyle

@@ -328,6 +328,33 @@ Design review validates against generated design system.
 - WCAG 2.1: https://www.w3.org/WAI/WCAG21/quickref/
 - Google Fonts: https://fonts.google.com
 
+## Implementation
+
+This skill uses a custom BM25 search engine for intelligent recommendations:
+
+### Scripts Location
+- `lib/ui-design/scripts/core.py` — BM25 search engine
+- `lib/ui-design/scripts/design_system.py` — Design system generator
+
+### Data Files
+- `lib/ui-design/data/styles.csv` — 21 UI styles
+- `lib/ui-design/data/products.csv` — 22 product types
+- `lib/ui-design/data/colors.csv` — 16 color palettes
+- `lib/ui-design/data/typography.csv` — 12 font pairings
+- `lib/ui-design/data/landing.csv` — 12 landing patterns
+- `lib/ui-design/data/ux.csv` — 20 UX principles
+
+### Quick Search Examples
+
+```bash
+# Search styles
+python lib/ui-design/scripts/core.py "minimal tech" --json
+
+# Generate full system
+python lib/ui-design/scripts/design_system.py \
+  --industry fintech --product banking --mood professional --full --json
+```
+
 ## Notes
 
 - This skill provides intelligent design recommendations

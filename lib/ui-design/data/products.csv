@@ -1,0 +1,23 @@
+industry,product_type,design_style,recommended_colors,key_features,example_sites
+fintech,banking_app,professional_trust,navy_blue/white/gold,security_indicators,clear_numbers,minimal_charts,stripe.com,revolut.com
+fintech,trading_platform,data_driven,black/white/neon_green,real_time_data,dynamic_charts,quick_actions,robinhood.com,coinbase.com
+healthcare,medical_app,calming_trust,soft_blue/white/pale_green,clear_hierarchy,accessible_forms,trust_badges,zocdoc.com,mychart.com
+healthcare,fitness_app,energetic_clean,orange/white/dark_gray,progress_visualization,achievement_badges,social_features,strava.com,fitbit.com
+ecommerce,marketplace,bold_conversion,black/white/accent_color,product_grid,clear_cta,trust_signals,amazon.com,ebay.com
+ecommerce,brand_store,premium_lifestyle,brand_colors/neutral,hero_imagery,minimal_ui,storytelling,glossier.com,apple.com
+education,learning_platform,friendly_engaging,blue/orange/white,progress_tracking,interactive_elements,clear_navigation,coursera.com,khanacademy.org
+education,kids_app,playful_colorful,bright_colors/rounded,fun_characters,reward_systems,simple_navigation,duolingo.com,pbskids.org
+travel,booking_platform,adventurous_aspirational,blue/white/gold,destination_imagery,clear_filters,easy_booking,airbnb.com,booking.com
+travel,travel_guide,immersive_exploratory,earth_tones/white,stunning_photos,local_insights,share_features,lonelyplanet.com,tripadvisor.com
+food,food_delivery,fast_friendly,red/orange/white,menu_visuals,quick_order,delivery_tracking,uber.com,doordash.com
+food,recipe_app,cozy_approachable,earth_tones/white,ingredient_lists,step_visuals,save_features,yummly.com,tasty.co
+entertainment,streaming_service,dark_immersive,black/white/accent,media_grid,personalization,quick_play,netflix.com,spotify.com
+entertainment,gaming_platform,playful_dynamic,bright_colors/dark,personality_test,achievement_display,social_features,steam.com,epicgames.com
+social,social_network,connecting_friendly,brand_blue/white,profile_visualization,content_feed,messaging,facebook.com,linkedin.com
+social,community_app,community_driven,brand_colors/neutral,user_profiles,discussion_threads,events,reddit.com,discord.com
+ productivity,task_manager,efficient_minimal,blue/white/accent,clear_hierarchy,quick_actions,progress_visual,trello.com,asana.com
+productivity,note_app,calm_focused,neutral/accent,text_editor,organization_features,cross_sync,notion.com,evernote.com
+real_estate,property_platform,professional_aspirational,navy/white/gold,property_photos,clear_filters,contact_cta,zillow.com,realtor.com
+real_estate,rental_app,approachable_efficient,blue/white/gray,property_grid,application_flow,messaging,apartments.com,rent.com
+news,news_portal,authoritative_clean,black/white/accent,content_hierarchy,category_navigation,share_features,nytimes.com,bbc.com
+news,blog_platform,editorial_style,brand_colors/white,text_focused,author_profiles,comment_system,medium.com,substack.com

@@ -1,0 +1,17 @@
+palette_name,primary,secondary,accent,background,text,use_case,mood,industries
+navy_trust,#1a365d,#2c5282,#3182ce,#ffffff,#1a365d,professional_services,trustworthy_stable,fintech/legal/enterprise
+soft_blue,#e3f2fd,#bbdefb,#64b5f6,#fafafa,#37474f,healthcare_wellness,calming_approachable,healthcare/mental_health/therapy
+energetic_orange,#ff6b35,#ff8c42,#ffa726,#ffffff,#37474f,action_oriented,exciting_motivating,fitness/food_delivery/gaming
+minimal_black,#000000,#333333,#666666,#ffffff,#000000,premium_luxury,sophisticated_clean,luxury/tech/high_end
+forest_green,#2e7d32,#388e3c,#43a047,#fafafa,#1b5e20,sustainability_growth,organic_natural,eco/health/outdoors
+purple_creative,#7c4dff,#b388ff,#e1bee7,#ffffff,#4a148c,creative_innovative,imaginative_unique,design/art/entertainment
+warm_earth,#d4a373,#bc9060,#a68a64,#fefae0,#5c4033,approachable_cozy,friendly_welcoming,food/home/lifestyle
+coral_friendly,#ff6b6b,#ee5a5a,#fc8181,#ffffff,#c53030,social_community,energetic_warm,social/community/events
+tech_gradient,#667eea,#764ba2,#f093fb,#ffffff,#4a5568,modern_tech,innovative_forward,saas/startup/tech_product
+monochrome,#2d3748,#4a5568,#718096,#ffffff,#1a202c,content_focused,neutral_professional,blog/news/documentation
+pastel_playful,#fbbf24,#f472b6,#a78bfa,#fef3c7,#374151,children_fun,joyful_approachable,kids/family/education
+dark_immersive,#1a1a2e,#16213e,#0f3460,#0f0f23,#e2e2e2,media_entertainment,dramatic_engaging,streaming/gaming/media
+gold_premium,#c9a227,#b8860b,#daa520,#ffffff,#8b6914,premium_luxury,elegant_sophisticated,luxury/fintech/real_estate
+red_conversion,#dc2626,#ef4444,#f87171,#ffffff,#991b1b,call_to_action,urgent_attention,ecommerce/promotions/alerts
+teal_modern,#14b8a6,#0d9488,#2dd4bf,#f0fdfa,#0f766e,modern_clean,balanced_fresh,startup/health/tech
+vibrant_mix,#f97316,#8b5cf6,#06b6d4,#ffffff,#1f2937,creative_dynamic,expressive_bold,marketing/events/youth_brand

@@ -1,0 +1,21 @@
+name,keywords,best_for,performance,accessibility,light_mode,dark_mode,effects
+Minimalism,简洁 功能性 专业 企业级 仪表盘 文档,Enterprise apps dashboards documentation saas,Excellent,WCAG AA,✓ Clean minimal shadows,✓ High contrast mode,Subtle hover transitions (200ms)
+Glassmorphism,玻璃 现代 透明 模糊 SaaS 金融 仪表盘,Modern SaaS financial dashboards crypto,Good,WCAG AA blur needs fallback,✓ Frosted glass effect,✓ Dark glass variant,Blur backdrop + smooth scale
+Neumorphism,柔和 3D 健康 养生 冥想,Health wellness apps meditation spa,Good,WCAG AA tactile friendly,✓ Soft shadows depth,⚠️ Low contrast issues,Soft shadows (0 4px 20px rgba) + gentle press
+Brutalism,粗犷 大胆 艺术 设计 作品集,Design portfolios artistic projects creative,Excellent,WCAG A high contrast,✓ Bold typography,✓ High contrast dark,Harsh shadows + instant transitions
+Dark Mode,夜间 OLED 编码 游戏 开发者,Coding platforms gaming crypto night apps,Excellent OLED saving,WCAG AA high contrast required,⚠️ Not recommended,✓ OLED optimized,Smooth transitions + no flash
+Claymorphism,粘土 儿童 教育 卡片 SaaS,Childrens apps educational SaaS playful,Excellent,WCAG AA friendly,✓ Playful 3D cards,✓ Dark clay variant,Rounded shadows + bounce hover
+Flat Design,扁平 简洁 MVP 移动 Web,Web apps mobile apps startup MVPs,Excellent,WCAG AA clear,✓ Solid colors,✓ Flat dark variant,Color transitions (200ms) + no shadows
+Soft UI,柔和 现代 企业 premium,SaaS wellness premium services,Excellent,WCAG AA calming,✓ Gentle shadows,✓ Soft dark variant,Soft shadows + subtle depth
+Bento Grid,网格 卡片 模块 仪表盘 产品页,Dashboards product pages portfolios,Excellent,WCAG AA organized,✓ Modular grid,✓ Dark grid variant,Card hover lift + smooth reorder
+Aurora UI,极光 渐变 SaaS 创意 现代,SaaS creative agencies modern apps,Good,WCAG AA gradient fallback,✓ Gradient glow,✓ Dark aurora,Gradient animation + glow hover
+AI Native,动态 自适应 AI 对话 聊天,AI products chatbots copilots assistant,Good,WCAG AA adaptive,✓ Dynamic layout,✓ Dark adaptive,Adaptive transitions + typing indicator
+Neobrutalism,大胆 年轻 Gen Z startup 原始,Gen Z brands startups creative,Excellent,WCAG AA high contrast,✓ Bold colors borders,✓ Dark variant with borders,Instant transitions + thick borders
+Organic,自然 生物 有机 环保 可持续,Wellness sustainability biotech healthcare,Good,WCAG AA natural,✓ Organic shapes,✓ Dark organic variant,Soft curves + natural transitions
+Swiss Modern,瑞士 现代 专业 企业 架构,Corporate enterprise architecture,Excellent,WCAG AA grid,✓ Grid based,✓ Dark swiss variant,Grid transitions + clean hover
+Retro Futurism,复古 未来 游戏 娱乐 音乐,Gaming entertainment music platforms,Good,WCAG AA retro fallback,✓ Retro colors,✓ Neon variant,Retro glow + scan effects
+Cyberpunk,赛博朋克 游戏 科技 crypto 科幻,Gaming tech crypto sci-fi apps,Good,WCAG AA high contrast,⚠️ Neon too bright,✓ Neon optimized,Neon glow + glitch effects
+Spatial UI,空间 VisionOS VR AR 沉浸,Spatial computing VR AR visionos,Good,WCAG AA spatial,✓ 3D depth,✓ Dark spatial,Depth transitions + hover glow
+Liquid Glass,液态 玻璃 premium SaaS 电商,Premium SaaS high-end ecommerce,Good,WCAG AA glass fallback,✓ Liquid glass,✓ Dark liquid variant,Liquid morphing + glow edge
+Kinetic Typography,动态 文字 排版 hero 动画,Hero sections marketing storytelling,Good,WCAG AA text fallback,✓ Animated text,✓ Dark kinetic variant,Text animation + scroll trigger
+Organic Shapes,圆形 流动 自然 软性,Wellness lifestyle beauty apps,Good,WCAG AA shapes,✓ Rounded shapes,✓ Dark organic variant,Shape morphing + gentle bounce
