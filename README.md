@@ -513,6 +513,19 @@ bash scripts/init.sh
 
 ---
 
+## Documentation / 文档
+
+| Document | Description |
+|----------|-------------|
+| **README.md** | Project introduction and installation guide / 项目介绍和安装指南 |
+| **README_zh.md** | Chinese version / 中文版 |
+| **QUICKREF.md** | Quick reference card (17 commands) / 快速参考卡 |
+| **WORKFLOW.md** | Detailed workflows / 详细工作流程 |
+| **USAGE.md** | User guide (Chinese) / 使用手册（中文） |
+| **USAGE_EN.md** | User guide (English) / 使用手册（英文） |
+
+---
+
 ## Design Philosophy / 设计理念
 
 1. **Spec First** — Align on requirements before writing code (OpenSpec)

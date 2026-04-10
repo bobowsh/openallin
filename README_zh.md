@@ -463,6 +463,19 @@ bash scripts/init.sh
 
 ---
 
+## 文档
+
+| 文档 | 说明 |
+|------|------|
+| **README.md** | 项目介绍和安装指南（双语） |
+| **README_zh.md** | 中文版 |
+| **QUICKREF.md** | 快速参考卡（17 个命令） |
+| **WORKFLOW.md** | 详细工作流程 |
+| **USAGE.md** | 使用手册（中文） |
+| **USAGE_EN.md** | User guide (English) |
+
+---
+
 ## 设计理念
 
 1. **规格先行** — 需求没对齐前不写代码（OpenSpec）
