@@ -101,7 +101,7 @@ ls .opencode/skills/oa-propose/
 head -20 .opencode/skills/oa-propose/SKILL.md
 ```
 
-**Verify all 22 commands are installed:**
+**Verify all 23 commands are installed:**
 
 ```bash
 # Should have 22 oa-* commands
@@ -317,7 +317,7 @@ AI: Sure, I'll install OpenAllIn for you.
 
 2. Detected you're using OpenCode, starting installation...
    ✅ Created .opencode/ directory
-   ✅ Installed 22 commands (oa-propose, oa-brainstorming, oa-tdd, oa-security, oa-review, etc.)
+   ✅ Installed 23 commands (oa-propose, oa-brainstorming, oa-tdd, oa-security, oa-review, etc.)
    ✅ Copied agents/ (role definitions)
    ✅ Copied rules/ (coding standards)
    ✅ Created specs/, changes/, workspace/ directories
@@ -373,7 +373,7 @@ AI: Checking installation status...
 ✅ AGENTS.md exists
 ✅ project.md exists
 ✅ .opencode/skills/ exists
-✅ 22 commands installed:
+✅ 23 commands installed:
    - /oa-propose
    - /oa-apply
    - /oa-validate
@@ -1175,7 +1175,7 @@ ls changes/<change-name>/
 
 1. **Edit project.md** - Fill in your project information
 2. **Try your first command** - `/oa-brainstorming` or `/oa-propose`
-3. **Read QUICKREF.md** - Quick reference card (22 commands cheat sheet)
+3. **Read QUICKREF.md** - Quick reference card (23 commands cheat sheet)
 4. **Read WORKFLOW.md** - Detailed workflows and best practices
 5. **Check examples/** - Example change proposals (for learning)
 
@@ -1228,7 +1228,7 @@ Before writing code, use `/oa-propose` to clarify:
 - **Issue Tracker**: https://github.com/vanrayliu/openallin/issues
 - **Documentation**: 
   - README.md - Project introduction and installation guide
-  - QUICKREF.md - Quick reference card (22 commands cheat sheet)
+  - QUICKREF.md - Quick reference card (23 commands cheat sheet)
   - WORKFLOW.md - Detailed workflows and best practices
   - USAGE.md - User guide (this document)
 - **Examples**: 

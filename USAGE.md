@@ -101,7 +101,7 @@ ls .opencode/skills/oa-propose/
 head -20 .opencode/skills/oa-propose/SKILL.md
 ```
 
-**验证 22 个命令全部安装：**
+**验证 23 个命令全部安装：**
 
 ```bash
 # 应该有 22 个 oa-* 命令
@@ -317,7 +317,7 @@ AI: 好的，我来帮你安装 OpenAllIn。
 
 2. 检测到你在使用 OpenCode，开始安装...
    ✅ 创建 .opencode/ 目录
-   ✅ 安装 22 个命令（oa-propose, oa-brainstorming, oa-tdd, oa-security, oa-review 等）
+   ✅ 安装 23 个命令（oa-propose, oa-brainstorming, oa-tdd, oa-security, oa-review 等）
    ✅ 复制 agents/（角色定义）
    ✅ 复制 rules/（编码规范）
    ✅ 创建 specs/, changes/, workspace/ 等目录
@@ -373,7 +373,7 @@ AI: 检查安装状态...
 ✅ AGENTS.md 存在
 ✅ project.md 存在
 ✅ .opencode/skills/ 存在
-✅ 22 个命令已安装：
+✅ 23 个命令已安装：
    - /oa-propose
    - /oa-apply
    - /oa-validate
@@ -1175,7 +1175,7 @@ ls changes/<change-name>/
 
 1. **编辑 project.md** - 填入你的项目信息
 2. **尝试第一个命令** - `/oa-brainstorming` 或 `/oa-propose`
-3. **阅读 QUICKREF.md** - 快速参考卡（22 个命令速查）
+3. **阅读 QUICKREF.md** - 快速参考卡（23 个命令速查）
 4. **阅读 WORKFLOW.md** - 详细工作流程和最佳实践
 5. **查看 examples/** - 示例变更提案（学习参考）
 
@@ -1228,7 +1228,7 @@ ls changes/<change-name>/
 - 问题反馈: https://github.com/vanrayliu/openallin/issues
 - **文档**: 
   - README.md - 项目介绍和安装指南
-  - QUICKREF.md - 快速参考卡（22 个命令速查）
+  - QUICKREF.md - 快速参考卡（23 个命令速查）
   - WORKFLOW.md - 详细工作流程和最佳实践
 - **示例**: 
   - examples/ - 示例变更提案（学习参考）
