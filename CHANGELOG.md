@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.7.5] - 2026-04-11
+
+### Fixed
+- **Data quality fixes**:
+  - colors.csv: fixed duplicate `space_cosmic` → renamed to `space_mission`
+  - products.csv: fixed column inconsistency (7 cols → merged to 6 cols, using "/" separator)
+- All CSV files verified: no duplicates, consistent column counts
+
+### Verified
+- Total data entries: **1220** (correct count, excluding headers)
+  - styles.csv: 70 entries ✓
+  - colors.csv: 161 entries ✓
+  - typography.csv: 66 entries ✓
+  - landing.csv: 65 entries ✓
+  - ux.csv: 127 entries ✓
+  - techstack.csv: 15 entries ✓
+  - ui-reasoning.csv: 161 entries ✓
+  - charts.csv: 25 entries ✓
+  - products.csv: 530 entries ✓
+
+---
+
 ## [v1.7.4] - 2026-04-11
 
 ### Fixed

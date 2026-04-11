@@ -132,7 +132,7 @@ manufacturing_control,#9b59b6,#8e44ad,#7f8c8d,#ffffff,#6c3483,manufacturing_prod
 energy_power,#f1c40f,#f39c12,#e67e22,#ffffff,#b7950b,energy_generation,power_distribution,energy/power/grid
 water_resource,#00bcd4,#0097a7,#006064,#ffffff,#004d40,water_management,resource_tracking,water/utility/resource
 air_environment,#87ceeb,#6bb3d9,#4a90d9,#ffffff,#2e86ab,air_quality,environmental_monitoring,air/environmental/quality
-space_cosmic,#1a1a2e,#16213e,#0f3460,#ffffff,#533e2d,space_exploration,galactic_infinite,space/exploration/mission
+space_mission,#1a1a2e,#16213e,#0f3460,#ffffff,#533e2d,space_exploration,galactic_infinite,space/exploration/mission
 research_academic,#34495e,#2c3e50,#1a252f,#ffffff,#0b141f,research_scientific,academic_systematic,research/academic/laboratory
 consulting_professional,#2c3e50,#34495e,#f39c12,#ffffff,#1a252f,consulting_advisory,professional_authoritative,consulting/advisory/firm
 recruitment_matching,#3498db,#2980b9,#1abc9c,#ffffff,#1e3a5f,recruitment_career,professional_matching,recruitment/career/hiring
