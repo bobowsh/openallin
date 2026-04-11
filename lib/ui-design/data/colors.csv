@@ -146,7 +146,7 @@ manufacturing_quality,#009900,#00aa00,#00bb00,#ffffff,#007700,manufacturing_cont
 energy_renewable,#27ae60,#2ecc71,#58d68d,#ffffff,#1e8449,energy_sustainable,renewable_green,energy/solar/renewable
 water_clean,#00a8cc,#00b8d4,#00c8dc,#ffffff,#0088aa,water_management,clean_refreshing,water/utility/purification
 air_fresh,#90ee90,#7dd87d,#6bc26b,#ffffff,#4da64d,air_quality,fresh_breathing,air/environmental/clean
-space_mission,#000033,#000044,#000055,#ffffff,#000022,space_exploration,mission_operational,space/mission/control
+space_control,#000033,#000044,#000055,#ffffff,#000022,space_exploration,mission_operational,space/mission/control
 research_discovery,#6a5acd,#7b68ee,#8a2be2,#ffffff,#483d8b,research_scientific,discovery_innovation,research/discovery/experiment
 consulting_strategy,#1e3a5f,#2e4a6f,#3e5a7f,#ffffff,#0e2a4f,consulting_strategy,strategic_planning,consulting/strategy/planning
 recruitment_talent,#9b59b6,#8e44ad,#7d3c98,#ffffff,#6c3483,recruitment_talent,talent_matching,recruitment/talent/acquisition
