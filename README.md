@@ -21,6 +21,31 @@
 
 ## 🚀 Quick Start / 快速开始
 
+### 💬 Natural Language Commands / 自然语言命令
+
+You can use **natural language** to trigger installation, updates, and workflows:
+
+你可以用**自然语言**让 AI 执行安装、更新和工作流：
+
+| What You Say / 你说的 | AI Executes / AI 执行的 |
+|----------------------|------------------------|
+| "Install OpenAllIn" / "安装 OpenAllIn" | `bash scripts/install.sh` |
+| "Update OpenAllIn" / "更新一下" | `bash scripts/update.sh` |
+| "Preview update" / "预览更新内容" | `bash scripts/update.sh --dry-run` |
+| "Force update" / "强制更新" | `bash scripts/update.sh --force` |
+| "Uninstall OpenAllIn" / "卸载 OpenAllIn" | `bash scripts/uninstall.sh` |
+| "Add a new feature" / "我想加个新功能" | `/oa-propose <name>` |
+| "Discuss requirements" / "讨论需求" | `/oa-discuss` |
+| "Start implementation" / "开始实现" | `/oa-apply <name>` |
+| "Check code quality" / "检查代码质量" | `/oa-review` |
+| "Security check" / "安全检查" | `/oa-security` |
+| "Ship this" / "发布这个" | `/oa-ship` |
+| "Deploy to production" / "部署到生产" | `/oa-land` |
+| "Debug this bug" / "调试这个 bug" | `/oa-debugging` |
+| "Write a test" / "写个测试" | `/oa-tdd` |
+
+---
+
 ```bash
 # 1. Clone this repo
 git clone https://github.com/vanrayliu/openallin.git
