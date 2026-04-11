@@ -137,6 +137,7 @@ This works with any tool that reads `AGENTS.md` from the project root.
 /oa-tdd                 → Test-driven development (Red-Green-Refactor)
 /oa-writing-plans       → Plan writing (multi-round)
 /oa-worktree            → Git worktree isolation
+/oa-update              → Update OpenAllIn installation
 ```
 
 ## License
