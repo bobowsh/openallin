@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.7.4] - 2026-04-11
+
+### Fixed
+- **Skills comprehensive review and fixes**:
+  - oa-worktree.md: fixed branch name reference errors (unified `feature/<name>` format)
+  - oa-team-exec.md: fixed path inconsistency issues (worktree directory and branch naming)
+  - oa-ui-design.md: updated data counts (1220 entries, 9 domains, accurate counts)
+  - oa-ship.md: added verification steps before commit (lint/typecheck/test)
+  - oa-discuss.md vs oa-brainstorming.md: clarified different use cases (Spec-Driven vs exploratory)
+  - oa-validate.md: added manual backup steps when scripts don't exist
+  - oa-archive.md: added manual backup steps when scripts don't exist
+- **install.sh**: removed duplicate `*)` default case (line 447-452 conflict)
+- **products.csv**: rewritten with consistent 6-column format, no duplicates (530 entries)
+
+### Added
+- **lib/review/**: design-checklist.md, architecture-checklist.md, custom-rules.md
+- **lib/security/**: checklist.md (OWASP+STRIDE), patterns.md, custom-rules.md
+- **lib/browser/**: playwright-config.md (already had test-templates.md)
+- **lib/performance/**: benchmark-templates.md, thresholds.md
+- **lib/deploy/**: smoke-tests.md, rollback.md, custom-smoke-tests.md
+
+### Changed
+- Updated data counts to accurate values:
+  - styles.csv: 70 entries
+  - products.csv: 530 entries
+  - colors.csv: 161 entries
+  - typography.csv: 66 entries
+  - landing.csv: 65 entries
+  - ux.csv: 127 entries
+  - techstack.csv: 15 entries
+  - ui-reasoning.csv: 161 entries
+  - charts.csv: 25 entries
+  - **Total**: 1220 entries (exceeds UI UX Pro Max 596 by 2x+)
+
+---
+
 ## [v1.7.3] - 2026-04-11
 
 ### Added

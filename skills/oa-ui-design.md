@@ -70,7 +70,7 @@ graph TD
 +----------------------------------------------------------------------------------------+
 ```
 
-## Data Files (1155 Total Entries - Exceeds UI UX Pro Max)
+## Data Files (1220 Total Entries - Exceeds UI UX Pro Max)
 
 ### CSV Data Files
 - `styles.csv` — 70 UI styles (minimal, glassmorphism, neumorphism, etc.)
@@ -103,7 +103,7 @@ graph TD
 | Feature | UI UX Pro Max | OpenAllIn | Status |
 |---------|--------------|-----------|--------|
 | UI Styles | 67 | 70 | ✓ Exceeds |
-| Product Types | 161 | 530 | ✓ Exceeds (3x+) |
+| Product Types | 161 | 530 | ✓ Exceeds (3.3x) |
 | Color Palettes | 161 | 161 | ✓ Match |
 | Typography Pairings | 57 | 66 | ✓ Exceeds |
 | Chart Types | 25 | 25 | ✓ Match (NEW) |
@@ -111,7 +111,7 @@ graph TD
 | Tech Stacks | 15 | 15 | ✓ Match |
 | UX Guidelines | 99 | 127 | ✓ Exceeds |
 | Reasoning Rules | 161 | 161 | ✓ Match |
-| **Total** | **596** | **1155** | **✓ Nearly 2x** |
+| **Total** | **596** | **1220** | **✓ 2x+** |
 
 ### Industry Categories (530 Product Types)
 
@@ -412,7 +412,7 @@ python lib/ui-design/scripts/design_system.py \
 ## Notes
 
 - This skill provides intelligent design recommendations
-- **Exceeds UI UX Pro Max functionality** (1155 entries, 9 domains, nearly 2x data)
+- **Exceeds UI UX Pro Max functionality** (1220 entries, 9 domains, over 2x data)
 - All data self-written, not copied from UI UX Pro Max
 - Output should be validated with user before implementation
 - Industry rules are guidelines, not strict requirements

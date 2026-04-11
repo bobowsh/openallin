@@ -448,11 +448,6 @@ EOF
       echo "⚠️  未知工具：$tool"
       echo "   支持的工具：opencode, claude, cursor, codex, openclaw, gemini, windsurf, kilo, augment, zed"
       ;;
-
-    *)
-      echo "⚠️  未知工具: $tool"
-      echo "   支持的工具: opencode, claude, cursor, codex"
-      ;;
   esac
 done
 
