@@ -159,8 +159,23 @@ You can use **natural language** to trigger these actions:
 /oa-tdd                 → Test-driven development (Red-Green-Refactor)
 /oa-writing-plans       → Plan writing (multi-round)
 /oa-worktree            → Git worktree isolation
-/oa-update              → Update OpenAllIn installation
 ```
+
+---
+
+## Script Commands (via Natural Language)
+
+These commands are scripts, not skills. Use natural language to trigger them:
+
+| You say | Script |
+|---------|--------|
+| "Install OpenAllIn" | `bash scripts/install.sh` |
+| "Update OpenAllIn" | `bash scripts/update.sh` |
+| "Uninstall OpenAllIn" | `bash scripts/uninstall.sh` |
+| "Preview update" | `bash scripts/update.sh --dry-run` |
+| "Force update" | `bash scripts/update.sh --force` |
+
+---
 
 ## License
 
